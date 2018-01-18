@@ -1,6 +1,6 @@
 {
   "name": "copay",
-  "description": "A Secure Bitcoin Wallet",
+  "description": "A Secure Dallar Wallet",
   "author": "BitPay",
   "version": "1.0.0",
   "keywords": [
@@ -11,14 +11,14 @@
     "multisignature",
     "bitcore"
   ],
-  "homepage": "https://copay,io",
+  "homepage": "https://dallar.org",
   "license": "MIT",
   "repository": {
     "url": "git://github.com/bitpay/copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/dallar-project/copay/issues"
   },
   "scripts": {
     "postinstall": "sed -i  -e \"s/.*require(...\\/...);//g\" node_modules/asn1.js-rfc5280/index.js;",
@@ -82,7 +82,7 @@
     "ajv": "^5.5.2",
     "angular2-moment": "^1.7.1",
     "autoprefixer": "^7.2.4",
-    "bitcore-wallet-client": "^6.5.0",
+    "bitcore-wallet-client": "dallar-project/bitcore-wallet-client",
     "buffer-compare": "^1.1.1",
     "cordova-android": "6.4.0",
     "cordova-clipboard": "^1.1.1",
