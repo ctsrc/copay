@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController, Events } from 'ionic-angular';
-import { Logger } from '@nsalaun/ng-logger';
+import { Logger } from '../../../providers/logger/logger';
 import * as _ from 'lodash';
 
 // Pages
@@ -371,7 +371,7 @@ export class ConfirmPage {
 
         tx.txp[wallet.id] = txp;
         this.tx = tx;
-        this.logger.debug('Confirm. TX Fully Updated for wallet:' + wallet.id, tx);
+        this.logger.debug('Confirm. TX Fully Updated for wallet:' + wallet.id, JSON.stringify(tx));
         return resolve();
       }).catch((err: any) => {
         return reject(err);
