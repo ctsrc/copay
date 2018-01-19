@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Events } from 'ionic-angular';
-import { Logger } from '@nsalaun/ng-logger';
+import { Logger } from '../../providers/logger/logger';
 import * as _ from 'lodash';
 
 //providers
@@ -146,7 +146,7 @@ export class ProfileProvider {
     });
 
     wallet.on('notification', (n: any) => {
-      this.logger.debug('BWC Notification:', n);
+      this.logger.debug('BWC Notification:', JSON.stringify(n));
 
       if (n.type == "NewBlock" && n.data.network == "testnet") {
         this.throttledBwsEvent(n, wallet);
@@ -548,6 +548,7 @@ export class ProfileProvider {
         this.isDisclaimerAccepted().then(() => {
           return resolve();
         }).catch(() => {
+          this.persistenceProvider.setHomeTipAccepted('accepted');
           return reject(new Error('NONAGREEDDISCLAIMER: Non agreed disclaimer'));
         });
       }).catch((err: any) => {
@@ -707,7 +708,7 @@ export class ProfileProvider {
       if (showOpts.extendedPrivateKey) showOpts.extendedPrivateKey = '[hidden]';
       if (showOpts.mnemonic) showOpts.mnemonic = '[hidden]';
 
-      this.logger.debug('Creating Wallet:', showOpts);
+      this.logger.debug('Creating Wallet:', JSON.stringify(showOpts));
       setTimeout(() => {
         this.seedWallet(opts).then((walletClient: any) => {
 

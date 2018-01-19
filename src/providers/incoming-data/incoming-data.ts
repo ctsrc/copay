@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Events, NavController, App } from 'ionic-angular';
-import { Logger } from '@nsalaun/ng-logger';
+import { Logger } from '../../providers/logger/logger';
 
 //providers
 import { BwcProvider } from '../bwc/bwc';
@@ -279,18 +279,19 @@ export class IncomingDataProvider {
   }
 
   private goSend(addr: string, amount: string, message: string, coin: string): void {
-    this.navCtrl.parent.select(3);
     if (amount) {
       this.navCtrl.push(ConfirmPage, {
         amount: amount,
         toAddress: addr,
         description: message,
-        coin: coin
+        coin: coin,
+        network: this.addressProvider.validateAddress(addr).network
       });
     } else {
       this.navCtrl.push(AmountPage, {
         toAddress: addr,
-        coin: coin
+        coin: coin,
+        network: this.addressProvider.validateAddress(addr).network
       });
     }
   }
