@@ -12,7 +12,6 @@ import { PlatformProvider } from '../../providers/platform/platform';
 
 //pages
 import { AltCurrencyPage } from './alt-currency/alt-currency';
-import { BitcoinCashPage } from './bitcoin-cash/bitcoin-cash';
 import { LockPage } from './lock/lock';
 import { AboutPage } from './about/about';
 import { AdvancedPage } from './advanced/advanced';
