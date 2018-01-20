@@ -42,7 +42,7 @@ export class BuyAndSellProvider {
 
     if (this.linkedServices.length == 0) {
       this.nextStepsProvider.register({
-        title: 'Buy or Sell Bitcoin',
+        title: 'Buy or Sell Dallar',
         name: 'buyandsell',
         icon: 'assets/img/icon-bitcoin.svg',
         page: 'BuyAndSellPage',

@@ -712,7 +712,7 @@ export class ProfileProvider {
       setTimeout(() => {
         this.seedWallet(opts).then((walletClient: any) => {
 
-          let defaultName = opts.coin == 'btc' ? 'Personal Wallet [BTC]' : 'Personal Wallet [BCH]';
+          let defaultName = opts.coin == 'btc' ? 'Personal Wallet [DAL]' : 'Personal Wallet [BCH]';
           let name = opts.name ? opts.name : defaultName; // TODO GetTextCatalog
           let myName = opts.myName ? opts.myName : 'me'; // TODO GetTextCatalog
 

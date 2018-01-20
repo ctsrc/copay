@@ -251,7 +251,7 @@ export class HomePage {
     });
 
     _.each(this.walletsBch, (wBch) => {
-      wallets.push(wBch);
+      //wallets.push(wBch);
     });
 
     if (_.isEmpty(wallets)) return;

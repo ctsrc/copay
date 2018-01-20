@@ -39,18 +39,18 @@
       <ion-list>
         <button ion-item (click)="goToBuyCoinbasePage()">
             <ion-icon item-start>
-              <img src="assets/img/buy-bitcoin.svg" alt="buy bitcoin" class="item-img-buy">                
+              <img src="assets/img/buy-bitcoin.svg" alt="buy Dallar" class="item-img-buy">                
             </ion-icon>
-            <ion-label>Buy Bitcoin</ion-label>
+            <ion-label>Buy Dallar</ion-label>
             <ion-note *ngIf="buyPrice" item-end>
               {{buyPrice.amount|currency:'$':2}} {{buyPrice.currency}}/BTC
             </ion-note>
           </button>
         <button ion-item (click)="goToSellCoinbasePage()">
             <ion-icon item-start>
-              <img src="assets/img/sell-bitcoin.svg" alt="sell bitcoin" class="item-img-sell">                
+              <img src="assets/img/sell-bitcoin.svg" alt="sell Dallar" class="item-img-sell">                
             </ion-icon>
-            <ion-label>Sell Bitcoin</ion-label>
+            <ion-label>Sell Dallar</ion-label>
             <ion-note *ngIf="sellPrice"  item-end>
               {{sellPrice.amount|currency:'$':2}} {{sellPrice.currency}}/BTC 
             </ion-note>

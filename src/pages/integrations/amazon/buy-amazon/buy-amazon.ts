@@ -414,7 +414,7 @@ export class BuyAmazonPage {
   public openSuccessModal(): void {
     let successComment: string;
     if (this.amazonGiftCard.status == 'FAILURE') {
-      successComment = 'Bitcoin purchase completed. Coinbase has queued the transfer to your selected wallet';
+      successComment = 'Dallar purchase completed. Coinbase has queued the transfer to your selected wallet';
     }
     if (this.amazonGiftCard.status == 'PENDING') {
       successComment = 'Your purchase was added to the list of pending'

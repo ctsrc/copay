@@ -121,7 +121,7 @@ export class WalletTransactionHistoryPage {
           'Destination': it.addressTo || '',
           'Description': _note,
           'Amount': _amount,
-          'Currency': 'BTC',
+          'Currency': 'DAL',
           'Txid': it.txid,
           'Creator': _creator,
           'Copayers': _copayers,
@@ -132,10 +132,10 @@ export class WalletTransactionHistoryPage {
           var _fee = (it.fees * this.satToBtc).toFixed(8)
           this.csvContent.push({
             'Date': this.formatDate(it.time * 1000),
-            'Destination': 'Bitcoin Network Fees',
+            'Destination': 'Dallar Network Fees',
             'Description': '',
             'Amount': '-' + _fee,
-            'Currency': 'BTC',
+            'Currency': 'DAL',
             'Txid': '',
             'Creator': '',
             'Copayers': ''

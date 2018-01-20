@@ -14,7 +14,7 @@
   <div *ngIf="hasBtcWallets || hasBchWallets">
     <ion-list>
       <ion-list-header class="title">{{'Recipient' | translate}}</ion-list-header>
-      <ion-searchbar placeholder="Search or enter bitcoin address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
+      <ion-searchbar placeholder="Search or enter Dallar address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
     </ion-list>
 
     <ion-list *ngIf="filteredContactsList && filteredContactsList[0]">
@@ -33,8 +33,8 @@
     </ion-list>
     <ion-list *ngIf="walletBtcList && walletBtcList[0]">
       <ion-item-divider class="title">
-        <img src="assets/img/icon-bitcoin.svg" alt="Bitcoin Wallets" width="16" />
-        <span translate>Transfer to Bitcoin Wallet</span>
+        <img src="assets/img/icon-bitcoin.svg" alt="Dallar Wallets" width="16" />
+        <span translate>Transfer to Dallar Wallet</span>
       </ion-item-divider>
 
       <button ion-item *ngFor="let wallet of walletBtcList" (click)="goToAmount(wallet)">
@@ -52,8 +52,8 @@
 
     <ion-list *ngIf="walletBchList && walletBchList[0]">
       <ion-item-divider class="title">
-        <img src="assets/img/bitcoin-cash-logo.svg" alt="Bitcoin Cash Wallets" width="22" />
-        <span translate>Transfer to Bitcoin Cash Wallet</span>
+        <img src="assets/img/bitcoin-cash-logo.svg" alt="Dallar Cash Wallets" width="22" />
+        <span translate>Transfer to Dallar Cash Wallet</span>
       </ion-item-divider>
 
       <button ion-item *ngFor="let wallet of walletBchList" (click)="goToAmount(wallet)">
@@ -70,6 +70,6 @@
     </ion-list>
   </div>
   <div *ngIf="!hasBtcWallets && !hasBchWallets" class="no-wallet-message">
-    <span translate>To get started, you'll need to create a bitcoin wallet and get some bitcoin.</span>
+    <span translate>To get started, you'll need to create a Dallar wallet and get some Dallar.</span>
   </div>
 </ion-content>

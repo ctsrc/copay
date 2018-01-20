@@ -180,9 +180,9 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-custom-config": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "bitcoin",
-        "SECOND_URL_SCHEME": "copay",
-        "THIRD_URL_SCHEME": "bitcoincash",
+        "URL_SCHEME": "dallar",
+        "SECOND_URL_SCHEME": "dallarcopay",
+        "THIRD_URL_SCHEME": "dallarcash",
         "ANDROID_SCHEME": " ",
         "ANDROID_HOST": " ",
         "ANDROID_PATHPREFIX": "/"

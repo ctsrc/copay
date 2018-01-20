@@ -78,7 +78,7 @@ export class SettingsPage {
   }
 
   public openBitcoinCashPage(): void {
-    this.navCtrl.push(BitcoinCashPage);
+    //this.navCtrl.push(BitcoinCashPage);
   }
 
   public openAltCurrencyPage(): void {
@@ -126,7 +126,7 @@ export class SettingsPage {
   }
 
   public openHelpExternalLink(): void {
-    var url = this.appName == 'Copay' ? 'https://github.com/bitpay/copay/issues' : 'https://help.bitpay.com/bitpay-app';
+    var url = 'https://github.com/dallar-project/copay/issues';
     var optIn = true;
     var title = null;
     var message = 'Help and support information is available at the website.'; // TODO gettextCatalog

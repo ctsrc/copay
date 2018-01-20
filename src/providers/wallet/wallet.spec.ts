@@ -104,10 +104,10 @@ describe('Provider: Wallet Provider', () => {
       expect(protocol).toEqual('bitcoincash');
     })
 
-    it('should return bitcoin if coin is btc', () => {
-      let coin = 'btc';
+    it('should return dallar if coin is dal', () => {
+      let coin = 'dal';
       let protocol = walletProvider.getProtocolHandler(coin);
-      expect(protocol).toEqual('bitcoin');
+      expect(protocol).toEqual('dallar');
     })
 
   });

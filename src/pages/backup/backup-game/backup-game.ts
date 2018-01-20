@@ -153,7 +153,7 @@ export class BackupGamePage {
       alert.present();
     } else {
       let opts = {
-        title: 'Your bitcoin wallet is backed up!',
+        title: 'Your Dallar wallet is backed up!',
         message: 'Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it.',
         buttons: [{
           text: 'Got it',

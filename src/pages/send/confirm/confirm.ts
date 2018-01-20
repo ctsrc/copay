@@ -401,7 +401,7 @@ export class ConfirmPage {
 
   private showSendMaxWarning(wallet: any, sendMaxInfo: any): void {
     let fee = (sendMaxInfo.fee / 1e8);
-    let msg = fee + " " + this.tx.coin.toUpperCase() + " will be deducted for bitcoin networking fees.";
+    let msg = fee + " " + this.tx.coin.toUpperCase() + " will be deducted for Dallar networking fees.";
     let warningMsg = this.verifyExcludedUtxos(wallet, sendMaxInfo);
 
     if (!_.isEmpty(warningMsg))
@@ -504,7 +504,7 @@ export class ConfirmPage {
     if (!tx || !wallet) return;
 
     if (this.paymentExpired) {
-      this.popupProvider.ionicAlert(null, 'This bitcoin payment request has expired.'); // TODO gettextCatalog
+      this.popupProvider.ionicAlert(null, 'This Dallar payment request has expired.'); // TODO gettextCatalog
       return;
     }
 

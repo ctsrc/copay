@@ -172,7 +172,7 @@ export class BuyCoinbasePage {
   }
 
   public buyConfirm() {
-    let message = 'Buy bitcoin for ' + this.amountUnitStr;
+    let message = 'Buy Dallar for ' + this.amountUnitStr;
     let okText = 'Confirm';
     let cancelText = 'Cancel';
     this.popupProvider.ionicConfirm(null, message, okText, cancelText).then((ok: boolean) => {
@@ -293,7 +293,7 @@ export class BuyCoinbasePage {
 
   public openSuccessModal(): void {
     let successText = 'Bought';
-    let successComment = 'Bitcoin purchase completed. Coinbase has queued the transfer to your selected wallet';
+    let successComment = 'Dallar purchase completed. Coinbase has queued the transfer to your selected wallet';
     let modal = this.modalCtrl.create(SuccessModalPage, { successText: successText, successComment: successComment }, { showBackdrop: true, enableBackdropDismiss: false });
     modal.present();
     modal.onDidDismiss(() => {

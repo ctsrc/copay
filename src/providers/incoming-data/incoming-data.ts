@@ -56,8 +56,8 @@ export class IncomingDataProvider {
 
     // Bitcoin  URL
     if (this.bwcProvider.getBitcore().URI.isValid(data)) {
-      this.logger.debug('Handling Bitcoin URI');
-      coin = 'btc';
+      this.logger.debug('Handling Dallar URI');
+      coin = 'dal';
       parsed = this.bwcProvider.getBitcore().URI(data);
       addr = parsed.address ? parsed.address.toString() : '';
       message = parsed.message;

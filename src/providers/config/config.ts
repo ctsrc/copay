@@ -122,15 +122,15 @@ const configDefault: Config = {
 
   // Bitcore wallet service URL
   bws: {
-    url: 'https://bws.bitpay.com/bws/api'
+    url: 'http://explorer.dallar.org/bws'
   },
 
   download: {
     bitpay: {
-      url: 'https://bitpay.com/wallet'
+      url: 'http://dallar.org/wallet'
     },
     copay: {
-      url: 'https://copay.io/#download'
+      url: 'http://dallar.org/wallet'
     }
   },
 
