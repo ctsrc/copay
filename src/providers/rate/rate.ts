@@ -72,13 +72,13 @@ export class RateProvider {
     });
   }
 
-  private getBTC(): Promise<any> {
-    return new Promise((resolve, reject) => {
-      this.http.get(this.rateServiceUrl).subscribe((data: any) => {
-        resolve(data);
-      });
-    });
-  }
+  // private getBTC(): Promise<any> {
+  //   return new Promise((resolve, reject) => {
+  //     this.http.get(this.rateServiceUrl).subscribe((data: any) => {
+  //       resolve(data);
+  //     });
+  //   });
+  // }
 
   private getBCH(): Promise<any> {
     return new Promise((resolve, reject) => {

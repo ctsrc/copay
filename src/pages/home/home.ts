@@ -5,13 +5,13 @@ import { Logger } from '../../providers/logger/logger';
 // Pages
 import { ActivityPage } from './activity/activity';
 import { AddPage } from "../add/add";
-import { AmazonPage } from '../integrations/amazon/amazon';
-import { BuyAndSellPage } from '../buy-and-sell/buy-and-sell';
+//import { AmazonPage } from '../integrations/amazon/amazon';
+//import { BuyAndSellPage } from '../buy-and-sell/buy-and-sell';
 import { CopayersPage } from '../add/copayers/copayers';
-import { GlideraPage } from '../integrations/glidera/glidera';
-import { MercadoLibrePage } from '../integrations/mercado-libre/mercado-libre';
+//import { GlideraPage } from '../integrations/glidera/glidera';
+//import { MercadoLibrePage } from '../integrations/mercado-libre/mercado-libre';
 import { ProposalsPage } from './proposals/proposals';
-import { ShapeshiftPage } from '../integrations/shapeshift/shapeshift';
+//import { ShapeshiftPage } from '../integrations/shapeshift/shapeshift';
 import { TxDetailsPage } from '../tx-details/tx-details';
 import { TxpDetailsPage } from '../txp-details/txp-details';
 import { WalletDetailsPage } from '../wallet-details/wallet-details';
