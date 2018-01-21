@@ -120,7 +120,7 @@ export class BackupGamePage {
   };
 
   private backupError(err: any): void {
-    // ongoingProcess.set('validatingWords', false);
+    this.onGoingProcessProvider.set('validatingWords', false);
     this.logger.error('Failed to verify backup: ', err);
     this.error = true;
     let showError = this.alertCtrl.create({
