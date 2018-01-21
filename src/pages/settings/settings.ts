@@ -65,9 +65,7 @@ export class SettingsPage {
     this.walletsBtc = this.profileProvider.getWallets({
       coin: 'btc'
     });
-    this.walletsBch = this.profileProvider.getWallets({
-      coin: 'bch'
-    });
+    this.walletsBch = [];
     this.config = this.configProvider.get();
     this.selectedAlternative = {
       name: this.config.wallet.settings.alternativeName,

@@ -244,7 +244,7 @@ export class HomePage {
     let wallets: Array<any> = [];
     let foundMessage = false;
     this.walletsBtc = this.profileProvider.getWallets({ coin: 'btc' });
-    this.walletsBch = this.profileProvider.getWallets({ coin: 'bch' });
+    this.walletsBch = [];
 
     _.each(this.walletsBtc, (wBtc) => {
       wallets.push(wBtc);
@@ -365,16 +365,16 @@ export class HomePage {
   };
 
   public reorderWalletsBch(indexes): void {
-    let element = this.walletsBch[indexes.from];
-    this.walletsBch.splice(indexes.from, 1);
-    this.walletsBch.splice(indexes.to, 0, element);
-    _.each(this.walletsBch, (wallet: any, index: number) => {
-      this.profileProvider.setWalletOrder(wallet.id, index);
-    });
+    // let element = this.walletsBch[indexes.from];
+    // this.walletsBch.splice(indexes.from, 1);
+    // this.walletsBch.splice(indexes.to, 0, element);
+    // _.each(this.walletsBch, (wallet: any, index: number) => {
+    //   this.profileProvider.setWalletOrder(wallet.id, index);
+    // });
   };
 
   public goToDownload(): void {
-    let url = 'https://github.com/bitpay/copay/releases/latest';
+    let url = 'https://github.com/dallar-project/copay/releases/latest';
     let optIn = true;
     let title = 'Update Available'; //TODO gettextcatalog
     let message = 'An update to this app is available. For your security, please update to the latest version.'; //TODO gettextcatalog
@@ -397,26 +397,26 @@ export class HomePage {
   }
 
   public goTo(page): void {
-    switch (page) {
-      case 'AmazonPage':
-        this.navCtrl.push(AmazonPage);
-        break;
-      case 'BitPayCardIntroPage':
-        //push BitPayCardIntroPage
-        break;
-      case 'BuyAndSellPage':
-        this.navCtrl.push(BuyAndSellPage);
-        break;
-      case 'GlideraPage':
-        this.navCtrl.push(GlideraPage);
-        break;
-      case 'MercadoLibrePage':
-        this.navCtrl.push(MercadoLibrePage);
-        break;
-      case 'ShapeshiftPage':
-        this.navCtrl.push(ShapeshiftPage);
-        break;
-    }
+    //switch (page) {
+      // case 'AmazonPage':
+      //   this.navCtrl.push(AmazonPage);
+      //   break;
+      // case 'BitPayCardIntroPage':
+      //   //push BitPayCardIntroPage
+      //   break;
+      // case 'BuyAndSellPage':
+      //   this.navCtrl.push(BuyAndSellPage);
+      //   break;
+      // case 'GlideraPage':
+      //   this.navCtrl.push(GlideraPage);
+      //   break;
+      // case 'MercadoLibrePage':
+      //   this.navCtrl.push(MercadoLibrePage);
+      //   break;
+      // case 'ShapeshiftPage':
+      //   this.navCtrl.push(ShapeshiftPage);
+      //   break;
+    //}
   }
 
   public doRefresh(refresher) {

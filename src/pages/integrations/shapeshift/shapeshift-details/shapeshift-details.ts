@@ -41,7 +41,7 @@ export class ShapeshiftDetailsPage {
   public openTransaction(id: string) {
     var url;
     if (this.ssData.outgoingType.toUpperCase() == 'BTC') {
-      url = "https://insight.bitpay.com/tx/" + id;
+      url = "http://explorer.dallar.org/tx/" + id;
     } else if (this.ssData.outgoingType.toUpperCase() == 'BCH') {
       url = "https://bch-insight.bitpay.com/tx/" + id;
     } else {

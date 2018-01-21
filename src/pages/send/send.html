@@ -3,7 +3,7 @@
   <ion-navbar>
     <ion-title>{{'Send' | translate}}</ion-title>
     <ion-buttons end>
-      <button *ngIf="hasBtcWallets || hasBchWallets" ion-button icon-only (click)="openScanner()">
+      <button *ngIf="hasBtcWallets" ion-button icon-only (click)="openScanner()">
         <ion-icon class="icon-scanner" name="qr-scanner"></ion-icon>
       </button>
     </ion-buttons>
@@ -11,7 +11,7 @@
 
 </ion-header>
 <ion-content no-bounce>
-  <div *ngIf="hasBtcWallets || hasBchWallets">
+  <div *ngIf="hasBtcWallets">
     <ion-list>
       <ion-list-header class="title">{{'Recipient' | translate}}</ion-list-header>
       <ion-searchbar placeholder="Search or enter Dallar address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
@@ -50,26 +50,8 @@
       </button>
     </ion-list>
 
-    <ion-list *ngIf="walletBchList && walletBchList[0]">
-      <ion-item-divider class="title">
-        <img src="assets/img/bitcoin-cash-logo.svg" alt="Dallar Cash Wallets" width="22" />
-        <span translate>Transfer to Dallar Cash Wallet</span>
-      </ion-item-divider>
-
-      <button ion-item *ngFor="let wallet of walletBchList" (click)="goToAmount(wallet)">
-        <ion-icon item-start>
-          <img *ngIf="wallet.network == 'testnet'" [ngStyle]="{'background-color': wallet.color}" src="assets/img/icon-wallet-testnet.svg"
-            class="icon-wallet" />
-          <img *ngIf="wallet.network != 'testnet'" [ngStyle]="{'background-color': wallet.color}" src="assets/img/icon-wallet.svg"
-            class="icon-wallet" />
-        </ion-icon>
-        <h2>{{wallet.name}}
-          <span *ngIf="wallet.m > 1">{{wallet.m}}-{{wallet.n}}</span>
-        </h2>
-      </button>
-    </ion-list>
   </div>
-  <div *ngIf="!hasBtcWallets && !hasBchWallets" class="no-wallet-message">
+  <div *ngIf="!hasBtcWallets" class="no-wallet-message">
     <span translate>To get started, you'll need to create a Dallar wallet and get some Dallar.</span>
   </div>
 </ion-content>

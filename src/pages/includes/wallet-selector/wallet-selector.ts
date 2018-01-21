@@ -48,7 +48,6 @@ export class WalletSelectorPage {
     for (var i = 0; i <= this.wallets.length; i++) {
       if (this.wallets[i]) {
         if (this.wallets[i].coin == 'btc') this.walletsBtc.push(this.wallets[i]);
-        else this.walletsBch.push(this.wallets[i]);
       }
     }
   }

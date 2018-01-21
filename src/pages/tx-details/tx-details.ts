@@ -69,7 +69,7 @@ export class TxDetailsPage {
         this.blockexplorerUrl = 'blockdozer.com/insight';
       }
     } else {
-      this.blockexplorerUrl = 'insight.bitpay.com';
+      this.blockexplorerUrl = 'explorer.dallar.org';
     }
 
     this.txConfirmNotificationProvider.checkIfEnabled(this.txId).then((res: any) => {

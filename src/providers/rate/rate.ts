@@ -34,22 +34,25 @@ export class RateProvider {
 
   private updateRatesBtc(): Promise<any> {
     return new Promise((resolve, reject) => {
-      this.getBTC().then((dataBTC: any) => {
+      this.ratesAvailable = false;
+      resolve();
 
-        _.each(dataBTC, (currency: any) => {
-          this.rates[currency.code] = currency.rate;
-          this.alternatives.push({
-            name: currency.name,
-            isoCode: currency.code,
-            rate: currency.rate
-          });
-        });
-        this.ratesAvailable = true;
-        resolve();
-      }).catch((errorBTC: any) => {
-        this.logger.error(errorBTC);
-        reject(errorBTC);
-      });
+      // this.getBTC().then((dataBTC: any) => {
+
+      //   _.each(dataBTC, (currency: any) => {
+      //     this.rates[currency.code] = currency.rate;
+      //     this.alternatives.push({
+      //       name: currency.name,
+      //       isoCode: currency.code,
+      //       rate: currency.rate
+      //     });
+      //   });
+      //   this.ratesAvailable = true;
+      //   resolve();
+      // }).catch((errorBTC: any) => {
+      //   this.logger.error(errorBTC);
+      //   reject(errorBTC);
+      // });
     });
   }
 
