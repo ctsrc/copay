@@ -1,18 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Scan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="2.2---Scan-Address" transform="translate(-20.000000, -565.000000)" stroke="#8F8F90">
-            <g id="Group-2" transform="translate(0.000000, 336.000000)">
-                <g id="ui-24px-outline-1_attach-87" transform="translate(21.000000, 230.000000)">
-                    <g id="Group">
-                        <path d="M17.6885043,8.49938195 L9.8566131,16.3312732 C7.631644,18.5562423 3.89369592,18.5562423 1.66872682,16.3312732 L1.66872682,16.3312732 C-0.556242274,14.1063041 -0.556242274,10.368356 1.66872682,8.1433869 L8.61063041,1.20148331 C10.2126082,-0.400494438 12.7045735,-0.400494438 14.3065513,1.20148331 L14.3065513,1.20148331 C15.908529,2.80346106 15.908529,5.29542645 14.3065513,6.8974042 L7.8986403,13.2163164 C7.00865266,14.1063041 5.58467244,14.1063041 4.78368356,13.2163164 L4.78368356,13.2163164 C3.89369592,12.3263288 3.89369592,10.9023486 4.78368356,10.1013597 L10.1236094,4.76143387" id="Shape"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="79" viewBox="0 0 77 79">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Hue_Saturation_1" data-name="Hue/Saturation 1" width="77" height="79" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAABPCAMAAACZH7iJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAACrdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHurdHsAAABNvdAxAAAAEHRSTlMAQIC/z++fYBAgj69wUN8wpJE1JAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfiARYAGRq5KGG4AAACUUlEQVRYw+WY3YKsIAiAVdL+zfd/2rOhzZbiBB7vlqtp1C/ABEQpgWgDQwjBghsnyTpC5sWGm6z6P1jTEnKBZp62gZClDbal5XY1WuttGdLz0OI+l0zbCyc24CLMP900rW24CFuLZSOqBy0wR4wciNv6wH52Gndm7gNLe+06wZSCc5ir3Bss2mo6waJyvhdMjVxTOTA1nXP2TjClPMtxTBg67pXGheHEtRdMre/zSNhytFlKwlywFO51FyqwQOHmty+kCqMSAX69UxOM8PaZIYZeMP09XspgqFrdUCHMfP0qhTDcAjt1hFW91gRzPWG17PxHYKYnbOwAc9fzbDvAPv9AF1gKJmNtVAjD6ZMt66ZmWNxPI4K5uiG+KEyEZ/M+fT9/jvfRrR0Wk9F99KjCtleYsnkughqMcfowT9yvAqja2gZD7R+G4vVsboPh8+MGAbSdvCBTVCV0YcGMWMXi3I8SWLl4IHRjx9KCBuWW8gNzQTPFngqifEHDigzaYMQWZmdBlH8gP1jpnKbb7QyilFF8vdfhts7sJrL4UR6XKmr2ryxcWLQrL4PNnWVHNixGpGJIwwfmZgEsRssyax8L+ADrNisJTHT9ZVyZfPhSbkphMXXwlONc5k7lwtEJFnOgf7eVec3EBtPQCRYrkaY7KymaKlWeL+TDrpLAV7fiGASwCxcMrZ6xItgHZwne6NOr2LDftql1j4iirzZvHkpeJHUiMS0sZ+9UGwOfziwImnZRdh8qIlQsc9FTvGlti2uXtZ0zP4rl2Bz26oMHt4ma4f8AVZlQTNKGLugAAAAASUVORK5CYII="/>
 </svg>

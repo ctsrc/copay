@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icons/Transaction/Send" transform="translate(-6.000000, -8.000000)">
-            <g id="Group-2" transform="translate(7.000000, 7.000000)">
-                <g id="Icons/Send">
-                    <g id="icons/received">
-                        <g id="Received" transform="translate(17.244258, 17.883990) scale(-1, 1) translate(-17.244258, -17.883990) translate(0.244258, 0.883990)">
-                            <path d="M17.3272285,33.991292 C26.4399269,33.991292 33.8272285,26.6039904 33.8272285,17.491292 C33.8272285,8.37859367 26.4399269,0.991292046 17.3272285,0.991292046 C8.21453012,0.991292046 0.82722849,8.37859367 0.82722849,17.491292 C0.82722849,26.6039904 8.21453012,33.991292 17.3272285,33.991292 Z" id="Oval-204" stroke="#BDBDBD" opacity="0.8"></path>
-                            <path d="M11.0503675,17.6759465 L24.0056239,17.6759465 M15.816934,23.6130491 L10,17.7604241 L15.614688,12" id="Line" stroke="#BEBEBE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(17.002812, 17.806525) scale(1, -1) rotate(-90.000000) translate(-17.002812, -17.806525) "></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="143" viewBox="0 0 143 143">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Hue_Saturation_1" data-name="Hue/Saturation 1" width="143" height="143" xlink:href="data:img/png;base64,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"/>
 </svg>

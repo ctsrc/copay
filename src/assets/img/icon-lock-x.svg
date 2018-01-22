@@ -1,27 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Addresss-(Unsecure-URL)" transform="translate(-9.000000, -9.000000)" stroke-width="2">
-            <g id="Items/Bitcoin-Address">
-                <g id="Items/Bitcoin-Address-Copy">
-                    <g id="ui-24px-outline-1_lock" transform="translate(10.955302, 10.000000)">
-                        <g id="Group">
-                            <path d="M6.5,0 L6.5,0 C4.225,0 2.4375,1.8 2.4375,4.09090909 L2.4375,6.54545455 L10.5625,6.54545455 L10.5625,4.09090909 C10.5625,1.8 8.775,0 6.5,0 L6.5,0 Z" id="Shape" stroke="#CACACA" fill="#EEEEEE" opacity="0.800000012"></path>
-                            <rect id="Rectangle-path" stroke="#CACACA" fill="#EEEEEE" opacity="0.800000012" x="0" y="6.54545455" width="13" height="11.4545455"></rect>
-                            <g id="ui-24px-outline-2_small-remove" transform="translate(8.000000, 7.000000)" stroke="#E14F61">
-                                <g id="Group">
-                                    <path d="M8,0 L0,8" id="Shape"></path>
-                                    <path d="M8,8 L0,0" id="Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="83" viewBox="0 0 74 83">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Hue_Saturation_1" data-name="Hue/Saturation 1" width="74" height="83" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABTCAMAAAAP12EQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEUAAADXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDXvcDcxsnj0dPo2tzr3+Hq3d/l1Nbeycziz9Lv5eby6uvx6Onm1tjZwMPbxMfXvcDXvcDfy87XvcDXvcDXvcDawsXdx8rXvcDXvcDQsbXBmZ6yf4ayf4a0g4q/lZuyf4ayf4bk09Xj0dPXvcDBmJ3l1Na5i5Hj0dO1hIvHoqe+k5myf4ayf4ayf4azgYi+lJrOrrLTtrqyf4bt4uO7j5XEnqOyf4ayf4bo2tyyf4ayf4YAAADyiRtNAAAAR3RSTlMAJmaMmcymQA0agL+zTczMzMzMzMzMzMzMzMzMWXPMM9br6+ut9ff7jzD++5/v2+Hq+dHG1vzs7FBgQPxJ1uJwz/VjzxDSIDn6uAEAAAABYktHRACIBR1IAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4gEWABg1C+JtoAAAAl1JREFUWMPt1/t30jAUB/ACDQPZ2Cpi2Hxs+JiirU8GKuKYTvv//0f2lfQmuaE3wePRc/j+SNLPyU1C0gaBLa12J2RZumH7oBf4p39nwGA6B94QM3LohbUZmrDvCvW6zJKB48BaA2bP0R+TnKzedokxeo0hfGx4fBJFd0f3lPmizj1cu/F9XmVyegbWkSb16/KGEiqwY9fpqnfmmGs5qfcqaVB2CVqUYcmZGk5MissauwTqUHSOOJYHorl5EftbylNKfNhIHW0fFOdiS3QaqUdVzzOLxMfkNRQ7/bGNkhWSqZGNisjz3khNBHW+M8X31L9IhTIX0zJPntpSdZg+k8+0IFUfj9Pn1FwwdHx/n7p8Yadezlyoy1fpaxsVp8mMTmVSCiyFirOm0qJQhQQsSMVFU2ERqEqqLUDFVVNuyQN99OYtnndCStP35S8fRuKpj7Ips5oOdM7nV7J/ulD3/bJuST8RKMwypc8BhUIsTCJRpoVJNMqwVCn5EtAp3VIl7Y/TQGkWJpEp1cIkOqVYmORAoRaQXCjEgpITZVirr4EvpVmr9bk/xeeQWrNdqAWklrtQC3Wulv6UJqVp7EsZkmo5UIikWHQKSFcrzCJTUJqvMYtKKRJnmEWkVCk7+hCLRmlSfiCbFonSpeKaMCwKZUjl5aVbBMqUqitVs5qpb6YkLnpoXROozY0hyXfl74lo+3FLKVBYtVS/ds8SKZGmvbSABN7gSyuXaJsht6AEPwZyq5CIW3Rzo0jKd8UsKSXqH2fzk9uo4Net19mOUZ7XxP9LnUYu2Ur5ZU/tKZT6DRpEzvU7l9WvAAAAAElFTkSuQmCC"/>
 </svg>
