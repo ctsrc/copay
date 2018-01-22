@@ -1,17 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Scan_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 32 20" style="enable-background:new 0 0 32 20;" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:#616263;}
-</style>
-<path class="st0" d="M6.3,6.3c-0.5,0-0.8-0.4-0.8-0.8V1.8C5.5,1.3,5.9,1,6.3,1H11c0.5,0,0.8,0.4,0.8,0.8c0,0.5-0.4,0.8-0.8,0.8H7.1
-    v3C7.1,5.9,6.7,6.3,6.3,6.3z"/>
-<path class="st0" d="M25.7,13.7c0.5,0,0.8,0.4,0.8,0.8v3.8c0,0.5-0.4,0.8-0.8,0.8H21c-0.5,0-0.8-0.4-0.8-0.8c0-0.5,0.4-0.8,0.8-0.8
-    h4v-3C24.9,14.1,25.3,13.7,25.7,13.7z"/>
-<path class="st0" d="M7.1,14.4v3h4c0.5,0,0.8,0.4,0.8,0.8c0,0.5-0.4,0.8-0.8,0.8H6.4c-0.5,0-0.8-0.4-0.8-0.8v-3.8
-    c0-0.5,0.4-0.8,0.8-0.8C6.7,13.7,7.1,14.1,7.1,14.4z"/>
-<path class="st0" d="M24.9,5.6v-3h-4c-0.5,0-0.8-0.4-0.8-0.8c0-0.5,0.4-0.8,0.8-0.8h4.7c0.5,0,0.8,0.4,0.8,0.8v3.8
-    c0,0.5-0.4,0.8-0.8,0.8C25.3,6.3,24.9,5.9,24.9,5.6z"/>
-<path class="st0" d="M31.1,10.8H0.8c-0.4,0-0.8-0.3-0.8-0.7c0-0.3,0.3-0.7,0.8-0.7h30.4c0.4,0,0.8,0.3,0.8,0.7
-    C31.9,10.4,31.6,10.8,31.1,10.8z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="76" viewBox="0 0 133 76">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<image id="Hue_Saturation_1" data-name="Hue/Saturation 1" width="133" height="76" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAABMCAMAAAB044RyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlB6SlAAAABxJEu0AAAAEHRSTlMAEJ8wz99QvyDvQICvcI9gfElyUgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfiARUXACDv+AsJAAABQ0lEQVRo3u2a2Y7DIAxFWUIIIQv//7XT0nmpBge7kKaj3vN+rRMrUhyDUmW0SUWMVnXsUMy6kZF9wicCU89OgQrPMokpkdSbEcnsIrOYaYv689AWvptFvRfr+RZbPazDyRYuctJ2CT0thKkDPCxgAQtYwOKbLOxHWCiXU3s3iz3XY4yLz80IvFmCzX2aDlaa0nucOkrc5kC/iCUAAAAAHqO/mvFo2fA+ogrtRZoJ6mqDh4VvL9JMVPp6jbwfsvO1cPa4AAAABEzC46VT2FJyPf/0tfFevJTJu5fQ8UOTjxWla5nH977fMud3XSd8rNe2YVUL4bsGC1jAAhaw+N8Ww5/fuVfPCVosCqycdHREupcFp9DWEuZZ1O+B6PQJFk1Xi5hNrQ+PB70Qvtx6IOoMjLChJIT3tW4aayzBGqM10Uny+t0PpM93Dx4yBl4AAAAASUVORK5CYII="/>
 </svg>
