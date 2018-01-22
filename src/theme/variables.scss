@@ -2,7 +2,7 @@
 // http://ionicframework.com/docs/theming/
 
 // Font path is used to include ionicons,
-// roboto, and noto sans fonts
+// Montserrat, and noto sans fonts
 $font-path: "../assets/fonts";
 
 // The app direction is used to include
@@ -87,7 +87,7 @@ $list-md-border-color: color($colors, light);
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
+@import "Montserrat";
 @import "noto-sans";
 
 /* Ionic Overrides and Workarounds */
