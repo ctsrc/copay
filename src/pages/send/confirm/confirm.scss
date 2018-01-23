@@ -51,7 +51,10 @@ page-confirm {
   }
 
   .no-wallet-message {
+    
     ion-item {
+      background: $color-primary;
+      color: $color-secondary;
       text-align: center;
       text-transform: uppercase;
     }

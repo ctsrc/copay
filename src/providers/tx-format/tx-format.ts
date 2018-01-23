@@ -50,7 +50,8 @@ export class TxFormatProvider {
 
   public formatAmountStr(coin: string, satoshis: number): string {
     if (isNaN(satoshis)) return;
-    return (this.formatAmount(satoshis) + ' ' + coin.toUpperCase());
+    return (this.formatAmount(satoshis) + ' ' + 'DAL');
+    //return (this.formatAmount(satoshis) + ' ' + coin.toUpperCase());
   }
 
   public toFiat(coin: string, satoshis: number, code: string): Promise<any> {

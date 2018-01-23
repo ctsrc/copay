@@ -16,10 +16,10 @@
     </ion-item>
   </ion-list>
   <div class="bottom-absolute" *ngIf="accepted.first && accepted.second">
-    <a class="link" (click)="openDisclaimer()" translate>Terms of Use</a>
+    <button ion-button (click)="openDisclaimer()" translate>Tap To Read Terms of Use</button>
     <ion-item no-lines text-wrap>
       <ion-label>
-        <span translate>I have read, understood, and agree to the </span>
+        <span translate>I have read, understood, and agree to the Terms of Use above.</span>
       </ion-label>
     <ion-checkbox [(ngModel)]="terms.accepted"></ion-checkbox>
     </ion-item>

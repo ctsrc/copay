@@ -1,4 +1,7 @@
 page-amount {
+  .ion-list-header {
+    color: color($colors, dark);
+  }
   .amount-pane {
     .title {
       padding: 18px 16px 0;
@@ -41,7 +44,7 @@ page-amount {
         }
       }
       .amount {
-        color: #A5A4A4;
+        color: $color-secondary;
         margin-left: 5px;
       }
       .result {
@@ -73,7 +76,7 @@ page-amount {
       width: 25%;
       margin-left: 75%;
       .operator-send {
-        color: color($colors, light);
+        color: $color-secondary;
         background-color: color($colors, primary);
         font-size: 16px;
         cursor: pointer;

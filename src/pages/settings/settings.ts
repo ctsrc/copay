@@ -123,10 +123,10 @@ export class SettingsPage {
   }
 
   public openHelpExternalLink(): void {
-    var url = 'https://github.com/dallar-project/copay/issues';
+    var url = 'https://discord.gg/ZV7CP89';
     var optIn = true;
     var title = null;
-    var message = 'Help and support information is available at the website.'; // TODO gettextCatalog
+    var message = 'Help and support is available by joining the Dallar Discord server.'; // TODO gettextCatalog
     var okText = 'Open'; // TODO gettextCatalog
     var cancelText = 'Go Back'; // TODO gettextCatalog
     this.externalLinkProvider.open(url, optIn, title, message, okText, cancelText);

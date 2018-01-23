@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-segment [(ngModel)]="selectedTab" color="primary" (ionChange)="selectTab(selectedTab)">
+  <ion-segment [(ngModel)]="selectedTab" color="dark" (ionChange)="selectTab(selectedTab)">
     <ion-segment-button value="words" translate>
       Words
     </ion-segment-button>
@@ -53,14 +53,14 @@
       </ion-item>
     </div>
 
+    <!--
     <ion-item *ngIf="selectedTab != 'file'">
       <ion-label stacked>{{'Coin' | translate}}</ion-label>
       <ion-select formControlName="coin" (ionChange)="testnetEnabled = false">
         <ion-option value="btc">DAL</ion-option>
       </ion-select>
     </ion-item>
-
-    <ion-item-divider color="light"></ion-item-divider>
+    -->
 
     <ion-item (click)="toggleShowAdvOpts()">
       <ion-label *ngIf="!showAdvOpts">Show advanced options</ion-label>

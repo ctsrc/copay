@@ -290,7 +290,7 @@ export class ImportWalletPage {
     opts.account = pathData.account;
     opts.networkName = pathData.networkName;
     opts.derivationStrategy = pathData.derivationStrategy;
-    opts.coin = this.importForm.value.coin;
+    opts.coin = 'btc'; //this.importForm.value.coin;
 
     let words: string = this.importForm.value.words || null;
 

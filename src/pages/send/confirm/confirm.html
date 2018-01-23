@@ -13,12 +13,12 @@
         <span translate *ngIf="tx.sendMax">Sending maximum amount</span>
       </div>
       <div class="amount-label">
-        <div class="amount">{{tx.amount | satToUnit: tx.coin}}</div>
+        <div class="amount">{{tx.amount}} DAL</div>
+        <!--
         <div class="alternative">{{tx.amount | satToFiat: tx.coin}}</div>
+        -->
       </div>
     </ion-item>
-
-    <ion-item-divider color="light"></ion-item-divider>
 
     <button ion-item class="item item-icon-right item-fee" (click)="chooseFeeLevel()">
       {{'Fee:' | translate}}
@@ -31,9 +31,9 @@
         </ion-note>
       </div>
       <div *ngIf="wallet && tx.txp[wallet.id]">
-        {{tx.txp[wallet.id].fee | satToUnit: tx.coin}}
+        {{tx.txp[wallet.id].fee}} DAL
         <ion-note>
-          ({{tx.txp[wallet.id].fee | satToFiat: tx.coin}})
+          ({{tx.txp[wallet.id].fee}} DAL)
           <div class="per-cent" *ngIf="tx.txp[wallet.id].feeRatePerStr">
             <ion-icon name="alert" [hidden]="!tx.txp[wallet.id].feeTooHigh"></ion-icon>
             <span [ngClass]="{'warn':tx.txp[wallet.id].feeTooHigh}" translate>

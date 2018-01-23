@@ -6,22 +6,14 @@
 
 <ion-content no-bounce>
   <ion-list>
-    <ion-item-divider color="light"></ion-item-divider>
     <button ion-item (click)="openAddressBookPage()">
       <ion-icon name="ios-contacts-outline" item-start></ion-icon>
       {{'Address book' | translate}}
     </button>
 
-    <ion-item-divider color="light"></ion-item-divider>
-
     <ion-item (click)="openHelpExternalLink()">
       <ion-icon name="ios-help-circle-outline" item-start></ion-icon>
       {{'Help &amp; support' | translate}}
-    </ion-item>
-
-    <ion-item (click)="openSendFeedbackPage()">
-      <ion-icon name="ios-mail-outline" item-start></ion-icon>
-      Send feedback
     </ion-item>
 
     <ion-item *ngIf="isCordova && !isWindowsPhoneApp" (click)="openFeedbackCompletePage()">
@@ -29,12 +21,14 @@
       Share {{ appName }}
     </ion-item>
 
-    <ion-item-divider color="light">{{'Preferences' | translate}}</ion-item-divider>
+    <ion-item-divider color="primary">{{'Preferences' | translate}}</ion-item-divider>
 
+    <!--
     <button ion-item (click)="openNotificationsPage()">
       <ion-icon name="ios-notifications-outline" item-start></ion-icon>
       {{'Notification' | translate}}
     </button>
+    -->
 
     <button ion-item (click)="openLanguagePage()">
       <ion-icon name="ios-globe-outline" item-start></ion-icon>
@@ -46,6 +40,7 @@
       </ion-note>
     </button>
 
+    <!--
     <button ion-item (click)="openAltCurrencyPage()">
       <ion-icon name="ios-cash-outline" item-start></ion-icon>
       <ion-label>
@@ -55,6 +50,7 @@
         {{ selectedAlternative.name }}
       </ion-note>
     </button>
+    -->
 
     <button ion-item (click)="openFeePolicyPage()">
       <ion-icon name="ios-git-network-outline" item-start></ion-icon>
@@ -74,7 +70,7 @@
       </ion-note>
     </button>
 
-    <ion-item-divider *ngIf="walletsBtc.length" color="light">{{'Dallar Wallets' | translate}}</ion-item-divider>
+    <ion-item-divider *ngIf="walletsBtc.length" color="primary">{{'Dallar Wallets' | translate}}</ion-item-divider>
 
     <button ion-item *ngFor="let wallet of walletsBtc" (click)="openWalletSettingsPage(wallet.credentials.walletId)">
       <ion-icon item-start>
@@ -94,7 +90,7 @@
       </ion-note>
     </button>
 
-    <ion-item-divider color="light">More</ion-item-divider>
+    <ion-item-divider color="primary">More</ion-item-divider>
 
     <button ion-item (click)="openAdvancedPage()">
       <ion-icon name="ios-cog-outline" item-start></ion-icon>

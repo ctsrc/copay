@@ -13,23 +13,23 @@
 <ion-content>
   <ion-slides pager="true" (ionSlideDidChange)="slideChanged()">
     <ion-slide>
-      <h1 translate>Dallar is secure,
-        <br/>digital money.</h1>
-      <p translate>You can spend Dallar at millions of websites and stores worldwide.</p>
+      <h1 translate>Dallar is a type of,
+        <br/>cryptocurrency.</h1>
+      <p translate>It's goal is to be a gesture of<br/>appreciation in a thankless world.</p>
       <img src='assets/img/app/onboarding/tour-phone.svg' />
       <div class="bottom-absolute">
-        <div translate>Just scan the code to pay.</div>
+        <div translate>Just scan someone's code to give!</div>
         <button ion-button block (click)="slideNext()" translate>Got it</button>
       </div>
     </ion-slide>
 
     <ion-slide>
-      <h1 translate>Dallar is a currency.</h1>
-      <p translate>You can trade it for other currencies like US Dollars, Euros, or Pounds.</p>
+      <h1 translate>Dallar is for game developers.</h1>
+      <p translate>You can use it to buy game development resources or to support tutorial makers.</p>
       <img src='assets/img/app/onboarding/tour-currency.svg' />
-      <p>1 BTC = {{localCurrencySymbol}}{{localCurrencyPerBtc}}</p>
+      <!--<p>1 BTC = {{localCurrencySymbol}}{{localCurrencyPerBtc}}</p>-->
       <div class="bottom-absolute">
-        <div translate>The exchange rate changes with the market.</div>
+        <div translate>It's exact value fluctuates with the community and market.</div>
         <button ion-button block (click)="slideNext()" translate>
           Makes sense
         </button>
@@ -41,9 +41,9 @@
       <p translate>This app stores your Dallar with cutting-edge security.</p>
       <img src='assets/img/app/onboarding/tour-control.svg' />
       <div class="bottom-absolute">
-        <div translate>Not even BitPay/Dallar.org can access it.</div>
+        <div translate>Not even the creators of Dallar can access it.</div>
         <button ion-button block (click)="createDefaultWallet()" translate>
-          Create Dallar wallet
+          Create Dallar Wallet
         </button>
       </div>
     </ion-slide>

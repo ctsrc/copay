@@ -30,7 +30,7 @@ $colors: (
   danger:     #bb331a,
   success:    #7BC94D,
   light:      #f4f4f4,
-  dark:       #424242,
+  dark:       #889da5,
   grey:       #999
 );
 
@@ -47,6 +47,8 @@ $text-color: color($colors, dark);
 $list-border-color: color($colors, light);
 
 
+
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -59,6 +61,13 @@ $item-ios-divider-background: white;
 // Material Design only Sass variables can go here
 
 $list-md-border-color: color($colors, light);
+$list-md-header-color: color($colors, dark);
+$card-md-header-color: color($colors, dark);
+$card-md-box-shadow: 0 2px 2px 0 rgba(136, 157, 165, .14), 0 3px 1px -2px rgba(136, 157, 165, .2), 0 1px 5px 0 rgba(136, 157, 165, .12);
+$item-md-divider-background: $color-primary;
+$item-md-divider-color: #fff;
+$toolbar-background: $color-primary;
+
 
 
 // App Windows Variables
@@ -87,8 +96,9 @@ $list-md-border-color: color($colors, light);
 // Fonts
 // --------------------------------------------------
 
-@import "Montserrat";
+@import "roboto";
 @import "noto-sans";
+@import "montserrat";
 
 /* Ionic Overrides and Workarounds */
 // Please include a description of the problem solved by the workaround.

@@ -7,11 +7,12 @@
   </div>
   <!--<div *ngFor="let wallet of wallets" (click)="selectWallet(wallet)">{{wallet.name}}</div>-->
   <div *ngIf="walletsBtc && walletsBtc[0]">
+    <!--
     <div class="title">
       <img src="assets/img/icon-bitcoin.svg" alt="Dallar Wallets" width="18" />
       <span translate>Dallar Wallets</span>
     </div>
-
+    -->
     <ion-list>
       <button ion-item *ngFor="let wallet of walletsBtc" class="wallet-button" (click)="selectWallet(wallet)">
         <ion-icon item-start>

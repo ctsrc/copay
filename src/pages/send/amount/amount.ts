@@ -74,7 +74,7 @@ export class AmountPage {
     this.email = this.navParams.data.email;
     this.color = this.navParams.data.color;
     this.coin = this.navParams.data.coin;
-    this.fixedUnit = this.navParams.data.fixedUnit;
+    this.fixedUnit = this.navParams.data.fixedUnit || true;
     this.LENGTH_EXPRESSION_LIMIT = 19;
     this.availableUnits = [];
     this.expression = '';

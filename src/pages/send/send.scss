@@ -4,7 +4,7 @@ page-send {
     text-align: center;
   }
   .title {
-    color: color($colors, dark);
+    color: $color-secondary;
     font-weight: 700;
     img {
       width: 22px;
