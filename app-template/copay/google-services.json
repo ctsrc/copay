@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "149194066736",
-    "firebase_url": "https://bitpay-wallet.firebaseio.com",
-    "project_id": "bitpay-wallet",
-    "storage_bucket": "bitpay-wallet.appspot.com"
+    "project_number": "157162145183",
+    "firebase_url": "https://dallar-wallet-project.firebaseio.com",
+    "project_id": "dallar-wallet-project",
+    "storage_bucket": "dallar-wallet-project.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:149194066736:android:6de8942b48fea047",
+        "mobilesdk_app_id": "1:157162145183:android:d6dbd7d4385198b7",
         "android_client_info": {
-          "package_name": "com.bitpay.copay"
+          "package_name": "org.dallar.dallar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "149194066736-1gf0d9nk288dke5jdiuj8unkplhl8nco.apps.googleusercontent.com",
+          "client_id": "157162145183-pf4u9v44s0rjiq7krfrtr71871olnvl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.dallar.dallar",
+            "certificate_hash": "62d0499b1a6d1f498ca95019ae325db3b3ce429d"
+          }
+        },
+        {
+          "client_id": "157162145183-u91o805j5nmg1j8acfh8vi0c80v5h4q7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZ8nyjRBe-0Lyur0LjO-SOkjv32uNQKy0"
+          "current_key": "AIzaSyCBgWAI_TDlceRbGkmFt-462SOUm33HbFs"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157162145183-u91o805j5nmg1j8acfh8vi0c80v5h4q7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

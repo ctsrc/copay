@@ -14,7 +14,7 @@ export class RateProvider {
   private SAT_TO_BTC: number;
   private BTC_TO_SAT: number;
 
-  private rateServiceUrl = 'https://bitpay.com/api/rates';
+  //private rateServiceUrl = 'https://bitpay.com/api/rates';
   private bchRateServiceUrl = 'https://api.kraken.com/0/public/Ticker?pair=BCHUSD,BCHEUR';
 
   constructor(
