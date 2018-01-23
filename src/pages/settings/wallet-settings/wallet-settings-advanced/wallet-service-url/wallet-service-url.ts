@@ -63,7 +63,7 @@ export class WalletServiceUrlPage {
     switch (this.walletServiceForm.value.bwsurl) {
       case 'prod':
       case 'production':
-        bws = 'http://localhost:3232/bws/api'
+        bws = 'http://explorer.dallar.org:3232/bws/api'
         break;
       case 'sta':
       case 'staging':
