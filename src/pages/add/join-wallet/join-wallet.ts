@@ -81,7 +81,7 @@ export class JoinWalletPage implements OnInit {
   ionViewWillEnter() {
     if (this.navParams.data.url) {
       let data: string = this.navParams.data.url;
-      data = data.replace('copay:', '');
+      data = data.replace('dallarcopay:', '');
       this.onQrCodeScannedJoin(data);
     }
   }

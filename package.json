@@ -15,7 +15,7 @@
   "homepage": "https://dallar.org",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/dallar-project/copay.git",
     "type": "git"
   },
   "bugs": {

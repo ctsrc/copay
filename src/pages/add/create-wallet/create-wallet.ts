@@ -90,7 +90,7 @@ export class CreateWalletPage implements OnInit {
       derivationPath: [this.derivationPathByDefault],
       testnetEnabled: [false],
       singleAddress: [false],
-      coin: [this.navParams.data.coin]
+      coin: ['btc']
     });
 
     this.setTotalCopayers(this.tc);
@@ -186,10 +186,10 @@ export class CreateWalletPage implements OnInit {
       m: this.createForm.value.requiredCopayers,
       n: this.createForm.value.totalCopayers,
       myName: this.createForm.value.totalCopayers > 1 ? this.createForm.value.myName : null,
-      networkName: this.createForm.value.testnetEnabled && this.createForm.value.coin != 'bch' ? 'testnet' : 'livenet',
+      networkName: this.createForm.value.testnetEnabled ? 'testnet' : 'livenet',
       bwsurl: this.createForm.value.bwsurl,
       singleAddress: this.createForm.value.singleAddress,
-      coin: this.createForm.value.coin
+      coin: 'btc'
     };
 
     let setSeed = this.createForm.value.selectedSeed == 'set';

@@ -1,6 +1,6 @@
 page-addressbook-view {
   .toolbar {
-    background-color: #192c3a;
+    background-color: $color-primary;
     &-content {
       margin-right: 70px;
     }
@@ -17,8 +17,8 @@ page-addressbook-view {
   .contact-view-header {
     position: relative;
     height: 70px;
-    border-color: #192c3a;
-    background-color: #192c3a;
+    border-color: $color-secondary;
+    background-color: $color-primary;
     padding-top: 20px;
     margin-bottom: 50px;
     text-align: center;

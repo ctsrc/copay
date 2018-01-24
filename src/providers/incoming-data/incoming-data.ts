@@ -7,7 +7,7 @@ import { BwcProvider } from '../bwc/bwc';
 import { PayproProvider } from '../paypro/paypro';
 import { ScanProvider } from '../scan/scan';
 import { PopupProvider } from '../popup/popup';
-import { AppProvider } from '../app/app';
+//import { AppProvider } from '../app/app';
 import { AddressProvider } from '../address/address';
 
 //pages
@@ -27,7 +27,7 @@ export class IncomingDataProvider {
     private scanProvider: ScanProvider,
     private popupProvider: PopupProvider,
     private logger: Logger,
-    private appProvider: AppProvider,
+    //private appProvider: AppProvider,
     private addressProvider: AddressProvider
   ) {
     this.logger.info('IncomingDataProvider initialized.');
@@ -38,11 +38,13 @@ export class IncomingDataProvider {
   }
 
   public redir(data: string): boolean {
+    this.logger.debug('Figuring Out URI');
     //TODO Injecting NavController in constructor of service fails with no provider error
     this.navCtrl = this.app.getActiveNav();
     // data extensions for Payment Protocol with non-backwards-compatible request
-    if ((/^bitcoin(cash)?:\?r=[\w+]/).exec(data)) {
-      data = decodeURIComponent(data.replace(/bitcoin(cash)?:\?r=/, ''));
+    if ((/^dallar(cash)?:\?r=[\w+]/).exec(data)) {
+      this.logger.debug('Handling PayPro URI');
+      data = decodeURIComponent(data.replace(/dallar(cash)?:\?r=/, ''));
       this.navCtrl.push(ConfirmPage, { paypro: data });
       return true;
     }
@@ -57,7 +59,7 @@ export class IncomingDataProvider {
     // Bitcoin  URL
     if (this.bwcProvider.getBitcore().URI.isValid(data)) {
       this.logger.debug('Handling Dallar URI');
-      coin = 'dal';
+      coin = 'btc';
       parsed = this.bwcProvider.getBitcore().URI(data);
       addr = parsed.address ? parsed.address.toString() : '';
       message = parsed.message;
@@ -75,7 +77,9 @@ export class IncomingDataProvider {
       }
       return true;
       // Cash URI
-    } else if (this.bwcProvider.getBitcoreCash().URI.isValid(data)) {
+    } 
+    /*
+    else if (this.bwcProvider.getBitcoreCash().URI.isValid(data)) {
       this.logger.debug('Handling Bitcoin Cash URI');
       coin = 'bch';
       parsed = this.bwcProvider.getBitcoreCash().URI(data);
@@ -104,8 +108,12 @@ export class IncomingDataProvider {
       }
       return true;
 
-      // Cash URI with bitcoin core address version number?
-    } else if (this.bwcProvider.getBitcore().URI.isValid(data.replace(/^bitcoincash:/, 'bitcoin:'))) {
+      
+    }
+    */
+    /*
+    // Cash URI with bitcoin core address version number?
+     else if (this.bwcProvider.getBitcore().URI.isValid(data.replace(/^bitcoincash:/, 'bitcoin:'))) {
       this.logger.debug('Handling bitcoincash URI with legacy address');
       coin = 'bch';
       parsed = this.bwcProvider.getBitcore().URI(data.replace(/^bitcoincash:/, 'bitcoin:'));
@@ -141,8 +149,11 @@ export class IncomingDataProvider {
         }
       });
       return true;
-      // Plain URL
-    } else if (/^https?:\/\//.test(data)) {
+      
+    }
+    */
+    // Plain URL
+    else if (/^https?:\/\//.test(data)) {
       this.logger.debug('Handling Plain URL');
 
       this.payproProvider.getPayProDetails(data).then((details) => {
@@ -170,7 +181,9 @@ export class IncomingDataProvider {
         let network = this.addressProvider.validateAddress(data).network;
         this.goToAmountPage(data, coin, network);
       }
-    } else if (this.bwcProvider.getBitcoreCash().Address.isValid(data, 'livenet')) {
+    } 
+    /*
+    else if (this.bwcProvider.getBitcoreCash().Address.isValid(data, 'livenet')) {
       this.logger.debug('Handling Bitcoin Cash Plain Address');
       if (this.navCtrl.getActive().name === 'ScanPage') {
         this.showMenu({
@@ -199,23 +212,26 @@ export class IncomingDataProvider {
       // Disable BitPay Card
       if (!this.appProvider.info._enabledExtensions.debitcard) return false;
 
-      /* For BitPay card binding
-      let secret = this.getParameterByName('secret', data);
-      let email = this.getParameterByName('email', data);
-      let otp = this.getParameterByName('otp', data);*/
+      // For BitPay card binding
+      //let secret = this.getParameterByName('secret', data);
+      //let email = this.getParameterByName('email', data);
+      //let otp = this.getParameterByName('otp', data);
       let reason = this.getParameterByName('r', data);
       switch (reason) {
         default:
         case '0':
-          /* For BitPay card binding */
+          // For BitPay card binding 
           //this.navCtrl.push(BitPayCardPage,{ secret: secret, email: email, otp: otp}); //Glidera TODO
           this.logger.debug('BitPay card TODO');
           break;
       }
       return true;
 
-      // Join
-    } else if (data && data.match(/^copay:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
+      
+    } 
+    */
+    // Join
+    else if (data && data.match(/^dallarcopay:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
       this.navCtrl.push(JoinWalletPage, { url: data, fromScan: true })
       return true;
       // Old join
@@ -259,6 +275,7 @@ export class IncomingDataProvider {
     return newUri;
   }
 
+  /*
   private getParameterByName(name: string, url: string): string {
     if (!url) return;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -268,6 +285,7 @@ export class IncomingDataProvider {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+  */
 
   private checkPrivateKey(privateKey: string): boolean {
     try {
