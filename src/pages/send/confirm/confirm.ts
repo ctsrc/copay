@@ -526,7 +526,7 @@ export class ConfirmPage {
             let amount = (this.tx.amount / 1e8).toFixed(8);
             let unit = this.config.wallet.settings.unitName;
             let name = wallet.name;
-            let message = 'Sending ' + amount + ' ' + unit + ' from your ' + name + ' wallet'; // TODO gettextCatalog
+            let message = 'Sending ' + amount + ' ' + 'DAL' + ' from your ' + name + ' wallet'; // TODO gettextCatalog
             let okText = 'Confirm'; // TODO gettextCatalog
             let cancelText = 'Cancel'; // TODO gettextCatalog
             this.popupProvider.ionicConfirm(null, message, okText, cancelText).then((ok: boolean) => {
