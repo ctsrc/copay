@@ -13,7 +13,7 @@
         <span translate *ngIf="tx.sendMax">Sending maximum amount</span>
       </div>
       <div class="amount-label">
-        <div class="amount">{{tx.amount}} DAL</div>
+        <div class="amount">{{tx.amount | satToUnit: tx.coin}}</div>
         <!--
         <div class="alternative">{{tx.amount | satToFiat: tx.coin}}</div>
         -->
