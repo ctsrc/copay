@@ -1,31 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="68" viewBox="0 0 80 68">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<image id="Hue_Saturation_1" data-name="Hue/Saturation 1" width="80" height="68" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABECAMAAAAhiEISAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAACaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWWaXWUAAAAaI3TjAAAAEHRSTlMAIBDvvzCAcECv35/PYI9Q2MjPWQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfiARYAFSNKmKa8AAABSklEQVRYw+3Y0Q6CMAyFYRiIIIh9/6c1BGiHOttu58JEdk0+5JcRSlWBVo2CthWaNkDBlqi5AL2OlnWFeT2tawBddmg2kG4Ysd09GiFex94E+YE9e5j/WQLSHXLBfxfwxiBmmwzsDRDvyh5mi1zYozNgzjoDFq6fDziy10K8uzyzMAHlod+nDvGUDRN7XfKUnsetHnC5BLuoB1yTWEU94H6ETdQDyhlNoh5wlk1kEC134OgQDXegSzTcgT5xVgP6xIccpQ0RJrGWgI9KWxZRAs6qZxEl4GTwdNER0CS6AlpEX0Bd9Ab8IB62qj/guxi/gucEXFe0WWMxK+AXMTNgUswOmBBDdsCEWD56HUXE6BWL8ppVMnrFIq+i2fWDWDi7vonFs+uLCJhdjyJi+I9FzPAvImb4FxH3lWwTMV9PRMSMXiKCvo+J6Az4BM0tOhHOq527AAAAAElFTkSuQmCC"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Check/Green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Views/Select-Wallet" transform="translate(-325.000000, -344.000000)" stroke="#12E5B6">
+            <g id="Componets/Select-Wallet">
+                <g id="Items/Activity-Cards/Recent-Activity" transform="translate(15.000000, 256.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 60.000000)">
+                        <g id="Icons/Check/Green" transform="translate(311.000000, 29.000000)">
+                            <g id="ui-24px-outline-1_check">
+                                <g id="Group" transform="translate(0.500000, 0.500000)" stroke-width="2">
+                                    <polyline id="Shape" points="0 7 7 14 17.5 0"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
