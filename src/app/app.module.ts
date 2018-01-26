@@ -389,7 +389,7 @@ export function providersComponents() {
 }
 
 @NgModule({
-  declarations: declarationsComponents(),
+  declarations: [pages, directives, pipes],
   imports: [
     IonicModule.forRoot(CopayApp, {
       tabsHideOnSubPages: true,
