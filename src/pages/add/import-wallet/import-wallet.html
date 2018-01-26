@@ -4,8 +4,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-segment [(ngModel)]="selectedTab" color="dark" (ionChange)="selectTab(selectedTab)">
+<ion-content no-bounce>
+  <ion-segment [(ngModel)]="selectedTab" color="primary" (ionChange)="selectTab(selectedTab)">
     <ion-segment-button value="words" translate>
       Words
     </ion-segment-button>

@@ -11,16 +11,13 @@
 
 </ion-header>
 <ion-content no-bounce>
-  <div *ngIf="hasBtcWallets">
-    <ion-list>
-      <ion-list-header class="title">{{'Recipient' | translate}}</ion-list-header>
-      <ion-searchbar placeholder="Search or enter Dallar address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
-    </ion-list>
+  <div *ngIf="hasBtcWallets || hasBchWallets">
+    <ion-searchbar placeholder="Search or enter bitcoin address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
 
     <ion-list *ngIf="filteredContactsList && filteredContactsList[0]">
-      <ion-item-divider class="title">
+      <ion-list-header color="light">
         <span translate>Transfer to Contact</span>
-      </ion-item-divider>
+      </ion-list-header>
       <button ion-item *ngFor="let item of filteredContactsList" (click)="goToAmount(item)">
         <ion-icon item-start>
           <gravatar [name]="item.name" [width]="30" [email]="item.email"></gravatar>

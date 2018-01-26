@@ -100,7 +100,3 @@ $toolbar-background: $color-primary;
 @import "noto-sans";
 @import "montserrat";
 
-/* Ionic Overrides and Workarounds */
-// Please include a description of the problem solved by the workaround.
-
-ion-navbar.hide { display: block !important; }
