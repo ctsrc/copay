@@ -37,10 +37,12 @@
           <strong>
             {{wallet.status.spendableBalanceStr}}
           </strong>
+          <!--
           &nbsp;
           <span>
             ({{wallet.status.spendableBalanceAlternative}} {{wallet.status.alternativeIsoCode}})
           </span>
+          -->
         </div>
 
         <div class="balance-error" *ngIf="updateStatusError" (tap)="updateAll(true)">

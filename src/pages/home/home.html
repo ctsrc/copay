@@ -61,7 +61,7 @@
   </ion-card>
 
   <ion-list *ngIf="txps && txps[0]">
-    <ion-list-header color="light">
+    <ion-list-header color="primary">
       <div item-start>
         <span translate>Payment Proposals</span>
       </div>
@@ -73,11 +73,11 @@
   </ion-list>
 
   <ion-list *ngIf="notifications && notifications[0] && recentTransactionsEnabled">
-    <ion-list-header color="light">
+    <ion-list-header color="primary">
       <div item-start>
         <span translate>Recent Transactions</span>
       </div>
-      <button ion-button item-end (click)="openActivityPage()" *ngIf="notificationsN>3">
+      <button ion-button item-end color="secondary" (click)="openActivityPage()" *ngIf="notificationsN>3">
         <ion-badge>{{notificationsN}}</ion-badge>
       </button>
     </ion-list-header>
@@ -97,15 +97,15 @@
   <ion-list *ngIf="walletsBtc && walletsBtc[0]">
     <ion-list-header color="primary">
         <div class="title" item-start>
-          <img src="assets/img/icon-bitcoin.svg" alt="Manage Wallets" width="18" />
+          <img src="assets/img/icon-bitcoin-white.svg" alt="Manage Wallets" width="18" />
           <span translate>Manage Wallets</span>
         </div>
         <div item-end *ngIf="!showReorderBtc">
           <button ion-button clear icon-only color="secondary" (click)="reorderBtc()" *ngIf="walletsBtc.length > 1">
-            <ion-icon name="reorder"></ion-icon>
+            <ion-icon name="reorder" style="color: #fff"></ion-icon>
           </button>
           <button ion-button clear icon-only color="primary" (click)="goToAddView()">
-            <ion-icon name="add"></ion-icon>
+            <ion-icon name="add" style="color: #fff"></ion-icon>
           </button>
         </div>
         <div item-end *ngIf="showReorderBtc">
