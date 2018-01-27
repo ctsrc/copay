@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavParams, Events, ViewController } from 'ionic-angular';
 
 //providers
-import { PlatformProvider } from '../../providers/platform/platform';
+//import { PlatformProvider } from '../../providers/platform/platform';
 import { FeeProvider } from '../../providers/fee/fee';
 import { PopupProvider } from '../../providers/popup/popup';
 import { BwcErrorProvider } from '../../providers/bwc-error/bwc-error';
@@ -37,12 +37,12 @@ export class TxpDetailsPage {
   private isGlidera: boolean;
   private GLIDERA_LOCK_TIME: number;
   private countDown: any;
-  private isCordova: boolean;
-  private isWindowsPhoneApp: boolean;
+  //private isCordova: boolean;
+  //private isWindowsPhoneApp: boolean;
 
   constructor(
     private navParams: NavParams,
-    private platformProvider: PlatformProvider,
+    //private platformProvider: PlatformProvider,
     private feeProvider: FeeProvider,
     private events: Events,
     private popupProvider: PopupProvider,
@@ -63,8 +63,8 @@ export class TxpDetailsPage {
     this.GLIDERA_LOCK_TIME = 6 * 60 * 60;
     this.currentSpendUnconfirmed = config.spendUnconfirmed;
     this.loading = false;
-    this.isCordova = this.platformProvider.isCordova;
-    this.isWindowsPhoneApp = this.platformProvider.isCordova && this.platformProvider.isWP;
+    //this.isCordova = this.platformProvider.isCordova;
+    //this.isWindowsPhoneApp = this.platformProvider.isCordova && this.platformProvider.isWP;
     this.copayers = this.wallet.status.wallet.copayers;
     this.copayerId = this.wallet.credentials.copayerId;
     this.isShared = this.wallet.credentials.n > 1;
@@ -117,18 +117,24 @@ export class TxpDetailsPage {
     }).length == this.tx.requiredSignatures - 1;
 
     if (lastSigner) {
+      this.buttonText = 'Approve';
+      /*
       if (this.isCordova && !this.isWindowsPhoneApp) {
         this.buttonText = 'Slide to send'; //TODO gettextcatalog
       } else {
         this.buttonText = 'Click to send';//TODO gettextcatalog
       }
+      */
       this.successText = 'Payment Sent';//TODO gettextcatalog
     } else {
+      this.buttonText = 'Approve';
+      /*
       if (this.isCordova && !this.isWindowsPhoneApp) {
         this.buttonText = 'Slide to accept';//TODO gettextcatalog
       } else {
         this.buttonText = 'Click to accept';//TODO gettextcatalog
       }
+      */
       this.successText = 'Payment Accepted';//TODO gettextcatalog
     }
   }

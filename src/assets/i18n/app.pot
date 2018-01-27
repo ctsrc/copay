@@ -118,9 +118,6 @@ msgstr ""
 msgid "Buy"
 msgstr ""
 
-msgid "Buy & Sell Dallar"
-msgstr ""
-
 msgid "Buy Gift Card"
 msgstr ""
 
@@ -137,9 +134,6 @@ msgid "Clear"
 msgstr ""
 
 msgid "Clear cache"
-msgstr ""
-
-msgid "Click to send"
 msgstr ""
 
 msgid "Click to shift"
@@ -206,6 +200,9 @@ msgid "Create shared wallet"
 msgstr ""
 
 msgid "Created by"
+msgstr ""
+
+msgid "Created {{card.date | amTimeAgo}}"
 msgstr ""
 
 msgid "Current fee rate for this policy"
@@ -389,6 +386,9 @@ msgstr ""
 msgid "Gift Card"
 msgstr ""
 
+msgid "Gift Card Amount:"
+msgstr ""
+
 msgid "Gift Card is not available to use anymore"
 msgstr ""
 
@@ -432,9 +432,6 @@ msgid ""
 "If enabled, all sensitive information (private key and recovery phrase) and "
 "actions (spending and exporting) associated with\n"
 "          this wallet will be protected."
-msgstr ""
-
-msgid "If enabled, the \"Next Steps Card\" will appear in the Home tab."
 msgstr ""
 
 msgid ""
@@ -498,7 +495,7 @@ msgstr ""
 msgid "Join wallet"
 msgstr ""
 
-msgid "Just scan someone's code to give!"
+msgid "Just scan the code to pay."
 msgstr ""
 
 msgid "Language"
@@ -568,9 +565,6 @@ msgid "New Proposal"
 msgstr ""
 
 msgid "New personal wallet"
-msgstr ""
-
-msgid "Next steps"
 msgstr ""
 
 msgid "No backup, no Dallar."
@@ -825,7 +819,7 @@ msgstr ""
 msgid "Security"
 msgstr ""
 
-msgid "See invoice"
+msgid "See invoice &rarr;"
 msgstr ""
 
 msgid "Select a wallet"
@@ -858,9 +852,6 @@ msgstr ""
 msgid "Sent"
 msgstr ""
 
-msgid "Services"
-msgstr ""
-
 msgid "Session Log"
 msgstr ""
 
@@ -882,7 +873,7 @@ msgstr ""
 msgid "Shift"
 msgstr ""
 
-msgid "Show Next Steps Card"
+msgid "Show Services Card"
 msgstr ""
 
 msgid "Show advanced options"
@@ -1277,6 +1268,9 @@ msgid "recovery tool."
 msgstr ""
 
 msgid "redeemable on Mercado Livre (Brazil)"
+msgstr ""
+
+msgid "{{'Reject'| translate}}"
 msgstr ""
 
 msgid ""

@@ -76,7 +76,7 @@ export class ImportWalletPage {
       derivationPath: [this.derivationPathByDefault, Validators.required],
       testnet: [false],
       bwsURL: [this.defaults.bws.url],
-      coin: [this.navParams.data.coin ? this.navParams.data.coin : 'btc']
+      coin: 'btc'
     });
   }
 
@@ -264,7 +264,7 @@ export class ImportWalletPage {
     } else {
       let opts: any = {};
       opts.bwsurl = this.importForm.value.bwsurl;
-      opts.coin = this.importForm.value.coin;
+      opts.coin = 'btc';
       this.importBlob(backupText, opts);
     }
   }
@@ -328,7 +328,7 @@ export class ImportWalletPage {
       if (evt.target.readyState == 2) { // DONE == 2
         let opts: any = {};
         opts.bwsurl = this.importForm.value.bwsurl;
-        opts.coin = this.importForm.value.coin;
+        opts.coin = 'btc';
         this.importBlob(evt.target.result, opts);
       }
     }

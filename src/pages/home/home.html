@@ -123,7 +123,7 @@
           <img *ngIf="wallet.network != 'testnet'" [ngStyle]="{'background-color': wallet.color}" src="assets/img/icon-wallet.svg"
             class="icon-wallet" />
         </ion-icon>
-        <h2>{{wallet.credentials.walletName}}</h2>
+        <h2>{{wallet.name}}</h2>
         <p>
           <span *ngIf="!wallet.isComplete()" translate>
             Incomplete

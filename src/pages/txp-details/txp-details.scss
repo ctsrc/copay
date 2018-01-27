@@ -140,5 +140,10 @@ page-txp-details {
   .btn-remove {
     color: color($colors, danger);
   }
+
+  .padded {
+    width: 100%;
+    padding: 15px 15px calc(5vw + 1vh) 15px;
+  }
 }
 

@@ -24,7 +24,7 @@
         <ion-icon item-end>
           <img class="check" src="assets/img/icon-check-selected.svg" *ngIf="selectedWalletId === wallet.id">
         </ion-icon>
-        <h2 class="wallet-name">{{wallet.credentials.walletName}}</h2>
+        <h2 class="wallet-name">{{wallet.name}}</h2>
         <p>
           <span *ngIf="!wallet.isComplete()" translate>
             Incomplete

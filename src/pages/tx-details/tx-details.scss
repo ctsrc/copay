@@ -142,4 +142,9 @@ page-tx-details {
   .btn-view {
     color: color($colors, primary);
   }
+
+  .padded {
+    width: 100%;
+    padding: 15px 15px calc(5vw + 1vh) 15px;
+  }
 }

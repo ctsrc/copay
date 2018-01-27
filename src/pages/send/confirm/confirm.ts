@@ -225,23 +225,32 @@ export class ConfirmPage {
 
   private setButtonText(isMultisig: boolean, isPayPro: boolean): void {
     if (isPayPro) {
+      this.buttonText = 'Tap to Send';
+      /*
       if (this.isCordova && !this.isWindowsPhoneApp) {
-        this.buttonText = 'Slide to pay'; // TODO gettextCatalog
+        this.buttonText = 'Tap to pay'; // TODO gettextCatalog
       } else {
         this.buttonText = 'Click to pay'; // TODO gettextCatalog
       }
+      */
     } else if (isMultisig) {
+      this.buttonText = 'Tap To Accept';
+      /*
       if (this.isCordova && !this.isWindowsPhoneApp) {
-        this.buttonText = 'Slide to accept'; // TODO gettextCatalog
+        this.buttonText = 'Tap to accept'; // TODO gettextCatalog
       } else {
         this.buttonText = 'Click to accept'; // TODO gettextCatalog
       }
+      */
     } else {
+      this.buttonText = 'Tap to Send';
+      /*
       if (this.isCordova && !this.isWindowsPhoneApp) {
-        this.buttonText = 'Slide to send'; // TODO gettextCatalog
+        this.buttonText = 'Tap to send'; // TODO gettextCatalog
       } else {
         this.buttonText = 'Click to send'; // TODO gettextCatalog
       }
+      */
     }
   }
 
