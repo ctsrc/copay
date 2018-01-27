@@ -12,7 +12,7 @@
 </ion-header>
 <ion-content no-bounce>
   <div *ngIf="hasBtcWallets || hasBchWallets">
-    <ion-searchbar placeholder="Search or enter bitcoin address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
+    <ion-searchbar placeholder="Search or enter Dallar address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
 
     <ion-list *ngIf="filteredContactsList && filteredContactsList[0]">
       <ion-list-header color="light">

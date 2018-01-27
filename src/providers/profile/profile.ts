@@ -352,7 +352,7 @@ export class ProfileProvider {
   private showWarningNoEncrypt(): Promise<any> {
     return new Promise((resolve, reject) => {
       let title = 'Are you sure?'; //TODO gettextcatalog
-      let msg = 'Your wallet keys will be stored in plan text in this device, if an other app access the store it will be able to access your Bitcoin'; //TODO gettextcatalog
+      let msg = 'Your wallet keys will be stored in plan text in this device, if an other app access the store it will be able to access your Dallar'; //TODO gettextcatalog
       let okText = 'Yes'; //TODO gettextcatalog
       let cancelText = 'No'; //TODO gettextcatalog
       this.popupProvider.ionicConfirm(title, msg, okText, cancelText).then((res: any) => {

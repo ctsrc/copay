@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 642 642" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"><g id="warning"><ellipse cx="318.939" cy="321.378" rx="323.061" ry="321.378" style="fill:none;stroke:#845057;stroke-width:14.17px;"/><path d="M318.742,443.847c0,0 -20.192,-212.009 -60.574,-255.756c-40.383,-43.748 116.1,-173.309 117.782,-3.366c1.683,169.944 -38.7,260.805 -38.7,260.805l-18.508,-1.683Z" style="fill:#845057;"/><ellipse cx="325.081" cy="497.602" rx="25.46" ry="24.398" style="fill:#845057;"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="332px" height="330px" viewBox="0 0 332 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="warning" transform="translate(4.000000, 4.000000)">
+            <ellipse id="Oval" stroke="#845057" stroke-width="7.085" cx="162.219839" cy="160.938905" rx="161.780161" ry="160.938905"></ellipse>
+            <path d="M162.121187,222.268638 C162.121187,222.268638 152.009583,116.099278 131.787376,94.1917605 C111.564668,72.2837418 189.927097,7.40249456 190.769397,92.5061431 C191.612198,177.610292 171.38949,223.111446 171.38949,223.111446 L162.121187,222.268638 Z" id="Shape" fill="#845057"></path>
+            <ellipse id="Oval" fill="#845057" cx="165.295586" cy="249.187938" rx="12.7496754" ry="12.217972"></ellipse>
+        </g>
+    </g>
+</svg>

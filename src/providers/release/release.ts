@@ -11,7 +11,7 @@ export class ReleaseProvider {
     public http: HttpClient,
     private app: AppProvider
   ) {
-    this.LATEST_RELEASE_URL = 'https://api.github.com/repos/bitpay/copay/releases/latest';
+    this.LATEST_RELEASE_URL = 'https://api.github.com/repos/dallar-project/copay/releases/latest';
     this.appVersion = this.app.info.version;
   }
 

@@ -67,7 +67,7 @@ msgid "All addresses"
 msgstr ""
 
 msgid ""
-"All signing devices must be added to this multisig wallet before bitcoin "
+"All signing devices must be added to this multisig wallet before Dallar "
 "addresses can be created."
 msgstr ""
 
@@ -83,11 +83,11 @@ msgstr ""
 msgid "Amount"
 msgstr ""
 
-msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgid "Anyone with your backup phrase can access or spend your Dallar."
 msgstr ""
 
 msgid ""
-"Approximate Bitcoin network fee to transfer wallet's balance (with normal "
+"Approximate Dallar network fee to transfer wallet's balance (with normal "
 "priority)"
 msgstr ""
 
@@ -112,52 +112,13 @@ msgstr ""
 msgid "Balance Hidden"
 msgstr ""
 
-msgid ""
-"Bitcoin (BTC) miner fees are high due to record demand for limited space on "
-"the\n"
-"      Bitcoin network. BitPay does not receive and does not control bitcoin "
-"miner fees."
-msgstr ""
-
-msgid "Bitcoin Address"
-msgstr ""
-
-msgid "Bitcoin Cash Wallets"
-msgstr ""
-
-msgid "Bitcoin Network Fee Policy"
-msgstr ""
-
-msgid "Bitcoin Wallets"
-msgstr ""
-
-msgid "Bitcoin is a currency."
-msgstr ""
-
-msgid ""
-"Bitcoin is different &ndash; it cannot be safely held with a bank or web "
-"service."
-msgstr ""
-
-msgid "Bitcoin is secure,"
-msgstr ""
-
-msgid "Bitcoin miner fees unusually high"
-msgstr ""
-
-msgid "Bitcoin network fee policy"
-msgstr ""
-
-msgid "Bitcoin transactions include a fee collected by miners on the network."
-msgstr ""
-
 msgid "Broadcast Payment"
 msgstr ""
 
 msgid "Buy"
 msgstr ""
 
-msgid "Buy & Sell Bitcoin"
+msgid "Buy & Sell Dallar"
 msgstr ""
 
 msgid "Buy Gift Card"
@@ -235,10 +196,10 @@ msgstr ""
 msgid "Could not update transaction history"
 msgstr ""
 
-msgid "Create a new wallet"
+msgid "Create Dallar Wallet"
 msgstr ""
 
-msgid "Create bitcoin wallet"
+msgid "Create a new wallet"
 msgstr ""
 
 msgid "Create shared wallet"
@@ -251,6 +212,45 @@ msgid "Current fee rate for this policy"
 msgstr ""
 
 msgid "Custom Amount"
+msgstr ""
+
+msgid ""
+"Dallar (DAL) miner fees are high due to record demand for limited space on "
+"the\n"
+"      Dallar network. Dallar.org does not receive and does not control "
+"Dallar miner fees."
+msgstr ""
+
+msgid "Dallar Address"
+msgstr ""
+
+msgid "Dallar Network Fee Policy"
+msgstr ""
+
+msgid "Dallar Wallet Home"
+msgstr ""
+
+msgid "Dallar Wallets"
+msgstr ""
+
+msgid "Dallar is a type of,"
+msgstr ""
+
+msgid ""
+"Dallar is different &ndash; it cannot be safely held with a bank or web "
+"service."
+msgstr ""
+
+msgid "Dallar is for game developers."
+msgstr ""
+
+msgid "Dallar miner fees unusually high"
+msgstr ""
+
+msgid "Dallar network fee policy"
+msgstr ""
+
+msgid "Dallar transactions include a fee collected by miners on the network."
 msgstr ""
 
 msgid "Date"
@@ -292,7 +292,7 @@ msgid "Duplicate"
 msgstr ""
 
 msgid ""
-"Each bitcoin wallet can generate billions of addresses from your 12-word "
+"Each Dallar wallet can generate billions of addresses from your 12-word "
 "backup. A new address is automatically generated\n"
 "      and shown each time you receive a payment."
 msgstr ""
@@ -377,7 +377,7 @@ msgstr ""
 msgid "Generate new address"
 msgstr ""
 
-msgid "Get news and updates from BitPay"
+msgid "Get news and updates from Dallar.org"
 msgstr ""
 
 msgid "Get started"
@@ -419,18 +419,13 @@ msgstr ""
 msgid "I agree to the"
 msgstr ""
 
-msgid "I have read, understood, and agree to the"
+msgid "I have read, understood, and agree to the Terms of Use above."
 msgstr ""
 
 msgid "I understand"
 msgstr ""
 
 msgid "I've written it down"
-msgstr ""
-
-msgid ""
-"If enabled, Bitcoin Cash addresses will be shown using Copay style address, "
-"and not the new cashaddr format."
 msgstr ""
 
 msgid ""
@@ -487,8 +482,14 @@ msgstr ""
 
 msgid ""
 "It's a good idea to avoid reusing addresses - this both protects your "
-"privacy and keeps your bitcoins secure against\n"
+"privacy and keeps your Dallar secure against\n"
 "        hypothetical attacks by quantum computers."
+msgstr ""
+
+msgid "Its exact value fluctuates with the community and market."
+msgstr ""
+
+msgid "Its goal is to be a gesture of"
 msgstr ""
 
 msgid "Join shared wallet"
@@ -497,7 +498,7 @@ msgstr ""
 msgid "Join wallet"
 msgstr ""
 
-msgid "Just scan the code to pay."
+msgid "Just scan someone's code to give!"
 msgstr ""
 
 msgid "Language"
@@ -522,6 +523,9 @@ msgid "Low amount inputs"
 msgstr ""
 
 msgid "Makes sense"
+msgstr ""
+
+msgid "Manage Wallets"
 msgstr ""
 
 msgid "Me"
@@ -569,7 +573,7 @@ msgstr ""
 msgid "Next steps"
 msgstr ""
 
-msgid "No backup, no bitcoin."
+msgid "No backup, no Dallar."
 msgstr ""
 
 msgid "No contacts yet"
@@ -599,7 +603,7 @@ msgstr ""
 msgid "Non eligible BTC wallets"
 msgstr ""
 
-msgid "Not even BitPay can access it."
+msgid "Not even the creators of Dallar can access it."
 msgstr ""
 
 msgid "Not now"
@@ -609,7 +613,7 @@ msgid "Note"
 msgstr ""
 
 msgid ""
-"Note: if this BCH wallet was duplicated from a BTC wallet, they share the "
+"Note: if this BCH wallet was duplicated from a DAL wallet, they share the "
 "same recovery phrase."
 msgstr ""
 
@@ -904,7 +908,7 @@ msgstr ""
 msgid "Spendable"
 msgstr ""
 
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Dallar network fees"
 msgstr ""
 
 msgid "Still pending"
@@ -919,13 +923,10 @@ msgstr ""
 msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr ""
 
-msgid "Take control of your money,"
+msgid "Tap To Read Terms of Use"
 msgstr ""
 
 msgid "Tap and hold to show"
-msgstr ""
-
-msgid "Terms of Use"
 msgstr ""
 
 msgid "Terms of use"
@@ -938,9 +939,6 @@ msgid "Thank you!"
 msgstr ""
 
 msgid "The derivation path"
-msgstr ""
-
-msgid "The exchange rate changes with the market."
 msgstr ""
 
 msgid ""
@@ -972,7 +970,7 @@ msgstr ""
 msgid "The wallet service URL"
 msgstr ""
 
-msgid "This app stores your bitcoin with cutting-edge security."
+msgid "This app stores your Dallar with cutting-edge security."
 msgstr ""
 
 msgid ""
@@ -981,8 +979,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This transaction amount is too small compared to current Bitcoin network "
-"fees. Spending these funds will need a Bitcoin network\n"
+"This transaction amount is too small compared to current Dallar network "
+"fees. Spending these funds will need a Dallar network\n"
 "        fee cost comparable to the funds itself."
 msgstr ""
 
@@ -1003,7 +1001,7 @@ msgstr ""
 msgid "To"
 msgstr ""
 
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a Dallar wallet and get some Dallar."
 msgstr ""
 
 msgid "Total"
@@ -1021,13 +1019,10 @@ msgstr ""
 msgid "Transactions without fee are not supported."
 msgstr ""
 
-msgid "Transfer to Bitcoin Cash Wallet"
-msgstr ""
-
-msgid "Transfer to Bitcoin Wallet"
-msgstr ""
-
 msgid "Transfer to Contact"
+msgstr ""
+
+msgid "Transfer to Dallar Wallet"
 msgstr ""
 
 msgid "Try again in {{expires}}"
@@ -1052,9 +1047,6 @@ msgid "Updating transaction history. Please stand by."
 msgstr ""
 
 msgid "Updating... Please stand by"
-msgstr ""
-
-msgid "Use Bitcoin Cash Copay Style Addresses"
 msgstr ""
 
 msgid "Use Unconfirmed Funds"
@@ -1175,6 +1167,9 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
+msgid "Welcome to Dallar,"
+msgstr ""
+
 msgid ""
 "We’re always looking for translation contributions! You can make "
 "corrections or help to make this app available in your native\n"
@@ -1205,16 +1200,15 @@ msgstr ""
 msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
 msgstr ""
 
-msgid "You can spend bitcoin at millions of websites and stores worldwide."
-msgstr ""
-
 msgid "You can still export it from Advanced &gt; Export."
 msgstr ""
 
-msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
+msgid ""
+"You can use it to buy game development resources or to support tutorial "
+"makers."
 msgstr ""
 
-msgid "You control your bitcoin."
+msgid "You control your Dallar."
 msgstr ""
 
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
@@ -1229,10 +1223,10 @@ msgid "Your Gift Cards"
 msgstr ""
 
 msgid ""
-"Your extended private keys are all that is needed to access your bitcoin "
+"Your extended private keys are all that is needed to access your Dallar "
 "funds. Be sure to protect your private\n"
-"        keys and store them only on secure devices. BitPay does not have "
-"access to your private keys, so you alone are responsible\n"
+"        keys and store them only on secure devices. The Dallar dev team "
+"does not have access to your private keys, so you alone are responsible\n"
 "        for your keys. If you share key access with external services, you "
 "take responsibility for the risk of theft or breach.\n"
 "        Only advanced users should handle extended private keys directly."
@@ -1267,10 +1261,13 @@ msgid ""
 "destination address."
 msgstr ""
 
-msgid "digital money."
+msgid "appreciation in a thankless world."
 msgstr ""
 
-msgid "get started with bitcoin."
+msgid "cryptocurrency."
+msgstr ""
+
+msgid "lets get started."
 msgstr ""
 
 msgid "preparing..."
@@ -1285,8 +1282,8 @@ msgstr ""
 msgid ""
 "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain "
 "information, networking and Copayer synchronization.\n"
-"          The default configuration points to https://bws.bitpay.com "
-"(BitPay's public BWS instance)."
+"          The default configuration points to "
+"http://explorer.dallar.org:3232/bws/api (Dallar's public BWS instance)."
 msgstr ""
 
 msgid "{{option.value.label}}"
