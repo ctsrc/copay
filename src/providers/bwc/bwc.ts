@@ -39,7 +39,7 @@ export class BwcProvider {
 
     //note opts use `bwsurl` all lowercase;
     let bwc = new BWC({
-      baseUrl: opts.bwsurl || 'http://explorer.dallar.org:3232/bws/api',
+      baseUrl: opts.bwsurl || 'https://explorer.dallar.org:3232/bws/api',
       verbose: opts.verbose,
       timeout: 100000,
       transports: ['polling'],

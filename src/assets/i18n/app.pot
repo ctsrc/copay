@@ -1277,7 +1277,7 @@ msgid ""
 "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain "
 "information, networking and Copayer synchronization.\n"
 "          The default configuration points to "
-"http://explorer.dallar.org:3232/bws/api (Dallar's public BWS instance)."
+"https://explorer.dallar.org:3232/bws/api (Dallar's public BWS instance)."
 msgstr ""
 
 msgid "{{option.value.label}}"

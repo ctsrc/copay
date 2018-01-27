@@ -131,7 +131,7 @@ const configDefault: Config = {
 
   // Bitcore wallet service URL
   bws: {
-    url: 'http://explorer.dallar.org:3232/bws/api'
+    url: 'https://explorer.dallar.org:3232/bws/api'
   },
 
   download: {
