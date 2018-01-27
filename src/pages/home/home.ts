@@ -15,7 +15,7 @@ import { ProposalsPage } from './proposals/proposals';
 import { TxDetailsPage } from '../tx-details/tx-details';
 import { TxpDetailsPage } from '../txp-details/txp-details';
 import { WalletDetailsPage } from '../wallet-details/wallet-details';
-import { CoinbasePage } from '../integrations/coinbase/coinbase';
+//import { CoinbasePage } from '../integrations/coinbase/coinbase';
 
 // Providers
 import { BwcErrorProvider } from '../../providers/bwc-error/bwc-error';

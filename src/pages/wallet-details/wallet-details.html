@@ -13,9 +13,11 @@
             (tap)="updateAll(true)"
             *ngIf="!updateStatusError && !wallet.balanceHidden && !wallet.scanning && wallet.status">
             <div class="balance-str">{{wallet.status.totalBalanceStr}}</div>
+            <!--
             <div class="balance-alt-str" *ngIf="wallet.network != 'testnet'">
               {{wallet.status.totalBalanceAlternative}} {{wallet.status.alternativeIsoCode}}
             </div>
+            -->
           </div>
 
           <div class="balance-hidden" *ngIf="!updateStatusError && wallet.balanceHidden  && !wallet.scanning">

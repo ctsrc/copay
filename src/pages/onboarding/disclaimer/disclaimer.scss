@@ -20,4 +20,9 @@ page-disclaimer {
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  .padded {
+    width: 100%;
+    padding: 15px 15px calc(5vw + 1vh) 15px;
+  }
 }

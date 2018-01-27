@@ -15,8 +15,8 @@ import { ConfirmPage } from '../../pages/send/confirm/confirm';
 import { AmountPage } from '../../pages/send/amount/amount';
 import { JoinWalletPage } from '../../pages/add/join-wallet/join-wallet';
 import { ImportWalletPage } from '../../pages/add/import-wallet/import-wallet';
-import { GlideraPage } from '../../pages/integrations/glidera/glidera';
-import { CoinbasePage } from '../../pages/integrations/coinbase/coinbase';
+//import { GlideraPage } from '../../pages/integrations/glidera/glidera';
+//import { CoinbasePage } from '../../pages/integrations/coinbase/coinbase';
 
 @Injectable()
 export class IncomingDataProvider {

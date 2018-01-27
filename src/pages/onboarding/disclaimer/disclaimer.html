@@ -5,16 +5,18 @@
   <h1 *ngIf="resume" translate>Quick review!</h1>
   <h1 *ngIf="!resume" translate>Almost done! Let's review.</h1>
   <p translate>Dallar is different &ndash; it cannot be safely held with a bank or web service.</p>
-  <ion-list no-lines text-wrap>
-    <ion-item>
-      <ion-label>I understand that my funds are held securely on this device, not by a company.</ion-label>
-      <ion-checkbox [(ngModel)]="accepted.first"></ion-checkbox>
-    </ion-item>
-    <ion-item>
-      <ion-label>I understand that if this app is moved to another device or deleted, my dallar can only be recovered with the backup phrase.</ion-label>
-      <ion-checkbox [(ngModel)]="accepted.second"></ion-checkbox>
-    </ion-item>
-  </ion-list>
+  <div class="padded">
+    <ion-list no-lines text-wrap>
+      <ion-item>
+        <ion-label>I understand that my funds are held securely on this device, not by a company.</ion-label>
+        <ion-checkbox [(ngModel)]="accepted.first"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>I understand that if this app is moved to another device or deleted, my dallar can only be recovered with the backup phrase.</ion-label>
+        <ion-checkbox [(ngModel)]="accepted.second"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </div>
   <div class="bottom-absolute" *ngIf="accepted.first && accepted.second">
     <button ion-button (click)="openDisclaimer()" translate>Tap To Read Terms of Use</button>
     <ion-item no-lines text-wrap>

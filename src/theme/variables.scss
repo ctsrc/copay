@@ -47,7 +47,7 @@ $list-border-color: color($colors, light);
 
 // Onboarding colors
 $onboarding-gradient-top-color: $toolbar-background;
-$onboarding-gradient-bottom-color: $color-secondary;
+$onboarding-gradient-bottom-color: #22343c;
 $onboarding-background-image: linear-gradient(
   to bottom,
   $onboarding-gradient-top-color 0%,
