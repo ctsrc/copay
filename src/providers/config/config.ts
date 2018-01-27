@@ -136,10 +136,10 @@ const configDefault: Config = {
 
   download: {
     bitpay: {
-      url: 'http://dallar.org/wallet'
+      url: 'https://dallar.org/wallet'
     },
     copay: {
-      url: 'http://dallar.org/wallet'
+      url: 'https://dallar.org/wallet'
     }
   },
 
