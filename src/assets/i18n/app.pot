@@ -230,7 +230,7 @@ msgstr ""
 msgid "Dallar Wallets"
 msgstr ""
 
-msgid "Dallar is a type of,"
+msgid "Dallar is a type of"
 msgstr ""
 
 msgid ""
@@ -502,6 +502,9 @@ msgid "Language"
 msgstr ""
 
 msgid "Learn more"
+msgstr ""
+
+msgid "Let's get started."
 msgstr ""
 
 msgid "Let's verify your backup phrase."
@@ -883,7 +886,7 @@ msgid "Show all"
 msgstr ""
 
 msgid ""
-"Since only you control your money, you’ll need to save your backup phrase "
+"Since only you control your money, you will need to save your backup phrase "
 "in case this app is deleted."
 msgstr ""
 
@@ -1158,7 +1161,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-msgid "Welcome to Dallar,"
+msgid "Welcome to Dallar."
 msgstr ""
 
 msgid ""
@@ -1256,9 +1259,6 @@ msgid "appreciation in a thankless world."
 msgstr ""
 
 msgid "cryptocurrency."
-msgstr ""
-
-msgid "lets get started."
 msgstr ""
 
 msgid "preparing..."

@@ -352,7 +352,7 @@ export class ProfileProvider {
   private showWarningNoEncrypt(): Promise<any> {
     return new Promise((resolve, reject) => {
       let title = 'Are you sure?'; //TODO gettextcatalog
-      let msg = 'Your wallet keys will be stored in plan text in this device, if an other app access the store it will be able to access your Dallar.'; //TODO gettextcatalog
+      let msg = 'Your wallet keys will be stored in plain text on this device. Other apps will be able to access your Dallar.'; //TODO gettextcatalog
       let okText = 'Yes'; //TODO gettextcatalog
       let cancelText = 'No'; //TODO gettextcatalog
       this.popupProvider.ionicConfirm(title, msg, okText, cancelText).then((res: any) => {
@@ -363,8 +363,8 @@ export class ProfileProvider {
 
   private encrypt(wallet: any): Promise<any> {
     return new Promise((resolve, reject) => {
-      let title = 'Please enter a password to encrypt your wallet keys on this device storage'; //TODO gettextcatalog
-      let warnMsg = 'Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down.'; //TODO gettextcatalog
+      let title = 'Optional: Enter a password to encrypt your wallet.'; //TODO gettextcatalog
+      let warnMsg = 'Your wallet will be encrypted on this device. The Spending Password cannot be recovered. Be sure to write it down.'; //TODO gettextcatalog
       this.askPassword(warnMsg, title).then((password: string) => {
         if (!password) {
           this.showWarningNoEncrypt().then((res: any) => {
