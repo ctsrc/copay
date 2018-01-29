@@ -7,11 +7,11 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>157162145183-pf4u9v44s0rjiq7krfrtr71871olnvl3.apps.googleusercontent.com</string>
+	<string>157162145183-5638rqhbsj930nlq4v40fa2j19404p1a.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>moc.tnetnocresuelgoog.sppa.3lvnlo17817rtrfrk7qijr0s44v9u4fp-381541261751</string>
+	<string>com.googleusercontent.apps.157162145183-5638rqhbsj930nlq4v40fa2j19404p1a</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCBgWAI_TDlceRbGkmFt-462SOUm33HbFs</string>
+	<string>AIzaSyBJguhXQ_5ZGsHMSjUkTCI2D0zBU20-gpk</string>
 	<key>GCM_SENDER_ID</key>
 	<string>157162145183</string>
 	<key>PLIST_VERSION</key>
@@ -19,21 +19,21 @@
 	<key>BUNDLE_ID</key>
 	<string>org.dallar.dallar</string>
 	<key>PROJECT_ID</key>
-	<string>dallar-wallet</string>
+	<string>dallar-wallet-project</string>
 	<key>STORAGE_BUCKET</key>
 	<string>dallar-wallet-project.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:157162145183:android:d6dbd7d4385198b7</string>
+	<string>1:157162145183:ios:d6dbd7d4385198b7</string>
 	<key>DATABASE_URL</key>
 	<string>https://dallar-wallet-project.firebaseio.com</string>
 </dict>
