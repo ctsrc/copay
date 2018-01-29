@@ -55,13 +55,26 @@ $onboarding-background-image: linear-gradient(
 );
 $onboarding-color: #fff;
 
+$font-family-base: "Montserrat";
+
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-$item-ios-divider-background: white;
+$item-ios-divider-background: $color-primary;
+
+$list-ios-border-color: color($colors, light);
+$list-ios-header-color: color($colors, dark);
+$card-ios-header-color: color($colors, dark);
+$card-ios-box-shadow: 0 2px 2px 0 rgba(136, 157, 165, .14), 0 3px 1px -2px rgba(136, 157, 165, .2), 0 1px 5px 0 rgba(136, 157, 165, .12);
+$item-ios-divider-background: $color-primary;
+$item-ios-divider-color: $color-secondary;
+$toggle-ios-handle-background-color: $color-secondary;
+
+
+
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -72,8 +85,11 @@ $list-md-header-color: color($colors, dark);
 $card-md-header-color: color($colors, dark);
 $card-md-box-shadow: 0 2px 2px 0 rgba(136, 157, 165, .14), 0 3px 1px -2px rgba(136, 157, 165, .2), 0 1px 5px 0 rgba(136, 157, 165, .12);
 $item-md-divider-background: $color-primary;
-$item-md-divider-color: #fff;
+$item-md-divider-color: $color-secondary;
+
 $toolbar-background: $color-primary;
+
+$font-family-md-base: "Montserrat";
 
 // App Windows Variables
 // --------------------------------------------------
@@ -110,3 +126,4 @@ $toolbar-background: $color-primary;
 .platform-core .scroll-content {
   overflow-y: auto;
 }
+

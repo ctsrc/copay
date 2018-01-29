@@ -23,5 +23,22 @@ page-backup-game {
     align-items: center;
     line-height: 170%;
     word-spacing: 10px;
+    padding: 4px;
+  }
+
+  .button-ios {
+    height: 2.0em;
+  }
+
+  .input-wrapper .label-ios {
+    font-size: 1.3rem;
+  }
+
+  .item-divider {
+    margin-bottom: 2rem;
+  }
+
+  .bottom-absolute .button {
+    margin: 0.25rem 0.25rem;
   }
 }

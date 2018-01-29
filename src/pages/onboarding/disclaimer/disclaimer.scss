@@ -15,8 +15,8 @@ page-disclaimer {
     cursor: pointer;
   }
   p {
-    line-height: 1.6;
-    font-size: 18px;
+    line-height: 2.0rem;
+    font-size: 1.75rem;;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -24,5 +24,9 @@ page-disclaimer {
   .padded {
     width: 100%;
     padding: 15px 15px calc(5vw + 1vh) 15px;
+  }
+
+  .item-ios {
+    font-size: 1.4rem;
   }
 }
