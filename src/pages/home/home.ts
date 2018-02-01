@@ -402,9 +402,6 @@ export class HomePage {
       case 'GlideraPage':
         this.navCtrl.push(GlideraPage);
         break;
-      case 'CoinbasePage':
-        this.navCtrl.push(CoinbasePage);
-        break;
       case 'MercadoLibrePage':
         this.navCtrl.push(MercadoLibrePage);
         break;

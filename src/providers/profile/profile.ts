@@ -78,7 +78,7 @@ export class ProfileProvider {
 
   private requiresBackup(wallet: any): boolean {
     if (wallet.isPrivKeyExternal()) return false;
-    if (!wallet.credentials.mnemonic) return false;
+    if (!wallet.credentials.mnemonic && !wallet.credentials.mnemonicEncrypted) return false;
     if (wallet.credentials.network == 'testnet') return false;
 
     return true;
@@ -775,9 +775,8 @@ export class ProfileProvider {
       setTimeout(() => {
         this.seedWallet(opts).then((walletClient: any) => {
 
-          let defaultName = opts.coin == 'btc' ? 'Personal Wallet [DAL]' : 'Personal Wallet [BCH]';
-          let name = opts.name ? opts.name : defaultName; // TODO GetTextCatalog
-          let myName = opts.myName ? opts.myName : 'me'; // TODO GetTextCatalog
+          let name = opts.name || 'Personal Wallet'; // TODO GetTextCatalog
+          let myName = opts.myName || 'me'; // TODO GetTextCatalog
 
           walletClient.createWallet(name, myName, opts.m, opts.n, {
             network: opts.networkName,

@@ -67,7 +67,7 @@ import { SellCoinbasePage } from '../pages/integrations/coinbase/sell-coinbase/s
 // Integrations: Glidera
 import { BuyGlideraPage } from '../pages/integrations/glidera/buy-glidera/buy-glidera';
 import { GlideraPage } from '../pages/integrations/glidera/glidera';
-import { GlideraTxDetailsPage } from '../pages/integrations/glidera/modal/glidera-tx-details';
+import { GlideraTxDetailsPage } from '../pages/integrations/glidera/glidera-tx-details/glidera-tx-details';
 import { SellGlideraPage } from '../pages/integrations/glidera/sell-glidera/sell-glidera';
 
 // Integrations: Mercado Libre
@@ -145,6 +145,7 @@ import { SatToUnitPipe } from '../pipes/satToUnit';
 import { SatToFiatPipe } from '../pipes/satToFiat';
 import { FiatToUnitPipe } from '../pipes/fiatToUnit';
 import { KeysPipe } from '../pipes/keys';
+import { OrderByPipe } from '../pipes/order-by';
 
 /* Providers */
 import { AddressProvider } from '../providers/address/address';
@@ -357,7 +358,8 @@ let pipes = [
   SatToUnitPipe,
   SatToFiatPipe,
   FiatToUnitPipe,
-  KeysPipe
+  KeysPipe,
+  OrderByPipe
 ];
 
 export function declarationsComponents() {

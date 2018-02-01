@@ -29,4 +29,10 @@ page-disclaimer {
   .item-ios {
     font-size: 1.4rem;
   }
+  .checkbox-list {
+    ion-item {
+      background: none;
+      color: #fff;
+    }
+  }
 }

@@ -5,6 +5,7 @@ import { Logger } from '../../../providers/logger/logger';
 
 // Pages
 import { HomePage } from '../../../pages/home/home';
+import { TabsPage } from '../../tabs/tabs';
 
 // Providers
 import { BwcProvider } from '../../../providers/bwc/bwc';
@@ -36,6 +37,7 @@ export class ImportWalletPage {
   public selectedTab: string;
   public isCordova: boolean;
   public isSafari: boolean;
+  public isIOS: boolean;
   public file: File;
   public testnetEnabled: boolean;
 
@@ -59,6 +61,7 @@ export class ImportWalletPage {
 
     this.isCordova = this.platformProvider.isCordova;
     this.isSafari = this.platformProvider.isSafari;
+    this.isIOS = this.platformProvider.isIOS;
     this.importErr = false;
     this.fromOnboarding = this.navParams.data.fromOnboarding;
     this.selectedTab = 'words';
@@ -192,9 +195,13 @@ export class ImportWalletPage {
         this.profileProvider.setDisclaimerAccepted().catch((err: any) => {
           this.logger.error(err);
         });
+        this.navCtrl.setRoot(TabsPage);
+        this.navCtrl.popToRoot();
       }
-      this.navCtrl.setRoot(HomePage);
-      this.navCtrl.popToRoot();
+      else {
+        this.navCtrl.popToRoot();
+        this.navCtrl.parent.select(0);
+      }
     }).catch((err: any) => {
       this.logger.warn(err);
     });
@@ -338,7 +345,6 @@ export class ImportWalletPage {
     if (this.navParams.data.fromScan) {
       this.navCtrl.popToRoot();
     } else {
-      this.navCtrl.setRoot(HomePage);
       this.navCtrl.popToRoot();
       this.navCtrl.parent.select(2);
     }
