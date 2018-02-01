@@ -9,6 +9,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { ProfileProvider } from '../../../providers/profile/profile';
 import { PlatformProvider } from '../../../providers/platform/platform';
 import { WalletProvider } from '../../../providers/wallet/wallet';
+import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'page-custom-amount',
@@ -30,7 +31,8 @@ export class CustomAmountPage {
     private platformProvider: PlatformProvider,
     private walletProvider: WalletProvider,
     private logger: Logger,
-    private socialSharing: SocialSharing
+    private socialSharing: SocialSharing,
+    private decimalPipe: DecimalPipe
   ) {
     this.amount = this.navParams.data.amount;
     this.coin = this.navParams.data.coin;
@@ -48,7 +50,8 @@ export class CustomAmountPage {
   }
 
   private updateQrAddress(): void {
-    this.qrAddress = this.walletProvider.getProtoAddress(this.wallet, this.address) + "?amount=" + this.amount;
+    console.log(this.amount);
+    this.qrAddress = this.walletProvider.getProtoAddress(this.wallet, this.address) + "?amount=" + this.decimalPipe.transform(parseInt(this.amount) / 1e8, '1.2-6');
   }
 
   public shareAddress(): void {
