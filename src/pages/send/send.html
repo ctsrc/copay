@@ -17,7 +17,7 @@
     <ion-searchbar placeholder="Search or enter Dallar address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
 
     <div *ngIf="filteredContactsList && filteredContactsList[0]">
-      <ion-list-header color="light">
+      <ion-list-header color="primary">
         <span translate>Transfer to Contact</span>
       </ion-list-header>
       <ion-list>
@@ -34,8 +34,8 @@
     </div>
 
     <div *ngIf="walletBtcList && walletBtcList[0]">
-      <ion-list-header class="title" color="light">
-        <img src="assets/img/icon-bitcoin.svg" alt="Bitcoin Wallets" width="16" />
+      <ion-list-header class="title" color="primary">
+        <img src="assets/img/icon-bitcoin-white.svg" alt="Dallar Wallets" width="16" />
         <span translate>Transfer to Dallar Wallet</span>
       </ion-list-header>
         

@@ -10,7 +10,7 @@ import { AppProvider } from '../../../../../providers/app/app';
 import { PersistenceProvider } from '../../../../../providers/persistence/persistence';
 
 //pages
-import { SettingsPage } from '../../../../settings/settings';
+//import { SettingsPage } from '../../../../settings/settings';
 
 @Component({
   selector: 'page-wallet-service-url',

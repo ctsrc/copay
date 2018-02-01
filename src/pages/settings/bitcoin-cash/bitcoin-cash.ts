@@ -4,7 +4,7 @@ import { Logger } from "../../../providers/logger/logger";
 import * as lodash from 'lodash';
 
 // Pages
-import { SettingsPage } from '../../settings/settings';
+//import { SettingsPage } from '../../settings/settings';
 
 // Providers
 import { WalletProvider } from "../../../providers/wallet/wallet";

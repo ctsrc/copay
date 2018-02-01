@@ -8,7 +8,6 @@
 
 
 <ion-content>
-  <ion-item-divider color="light"></ion-item-divider>
   <ion-list>
     <ion-item>
       <ion-label>{{'Use Unconfirmed Funds' | translate}}</ion-label>
@@ -19,6 +18,7 @@
     </ion-item-divider>
   </ion-list>
 
+  <!--
   <ion-list>
     <ion-item>
       <ion-label>{{'Use Bitcoin Cash Copay Style Addresses' | translate}}</ion-label>
@@ -28,6 +28,7 @@
       <span translate>If enabled, Bitcoin Cash addresses will be shown using Copay style address, and not the new cashaddr format.</span>
     </ion-item-divider>
   </ion-list>
+  -->
 
   <ion-list>
     <ion-item>
@@ -40,13 +41,14 @@
     </ion-item-divider>
   </ion-list>
 
+  <!--
   <ion-list>
     <ion-item>
       <ion-label>{{'Show Services Card' | translate}}</ion-label>
       <ion-toggle [(ngModel)]="showIntegrations" (ionChange)="integrationsChange()"></ion-toggle>
     </ion-item>
     <div *ngIf="showIntegrations">
-  <!--
+  
       <ion-item *ngFor="let integration of homeIntegrations">
         <ion-label>{{integration.title}}</ion-label>
         <ion-checkbox [(ngModel)]="integration.show" (ionChange)="integrationChange(integration.name)"></ion-checkbox>

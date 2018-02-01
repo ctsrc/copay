@@ -17,7 +17,7 @@ import { PlatformProvider } from '../../../../../providers/platform/platform';
 import { AppProvider } from '../../../../../providers/app/app';
 
 //pages
-import { SettingsPage } from '../../../../../pages/settings/settings';
+//import { SettingsPage } from '../../../../../pages/settings/settings';
 
 @Component({
   selector: 'page-wallet-export',

@@ -52,7 +52,7 @@
         <img src="assets/img/check-white.svg" class="bg green" />
       </ion-icon>
       <div class="title" translate>
-        Your bitcoin wallet is ready!
+        Your Dallar wallet is ready!
       </div>
       <div class="subtitle" translate>
         On this screen you can see all your wallets, accounts, and assets.
@@ -94,17 +94,17 @@
     </button>
   </div>
 
-  <div *ngIf="walletsBtc && walletsBtc[0]">
-    <ion-list-header color="light">
+  <div *ngIf="walletsBtc">
+    <ion-list-header color="primary">
       <div class="title" item-start>
-        <img src="assets/img/icon-bitcoin.svg" alt="Bitcoin Wallets" width="18" />
-        <span translate>Bitcoin Wallets</span>
+        <img src="assets/img/icon-bitcoin-white.svg" alt="Manage Wallets" width="18" />
+        <span translate>Manage Wallets</span>
       </div>
       <div item-end *ngIf="!showReorderBtc">
         <button ion-button clear icon-only color="secondary" (click)="reorderBtc()" *ngIf="walletsBtc.length > 1">
           <ion-icon name="reorder"></ion-icon>
         </button>
-        <button ion-button clear icon-only color="primary" (click)="goToAddView()">
+        <button ion-button clear icon-only color="secondary" (click)="goToAddView()">
           <ion-icon name="add"></ion-icon>
         </button>
       </div>
