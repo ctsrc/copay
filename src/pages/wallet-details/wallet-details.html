@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div *ngIf="!updateStatusError && wallet.scanning">
+        <div class="balance-scanning" *ngIf="!updateStatusError && wallet.scanning">
           <strong translate>[Scanning Funds]</strong>
         </div>
 
@@ -93,10 +93,10 @@
         WARNING: Key derivation is not working on this device/wallet. Actions cannot be performed on this wallet.
       </span>
     </ion-item-divider>
-    <ion-list-header color="primary">
+    <ion-item-divider>
       <span *ngIf="requiresMultipleSignatures" translate>Proposals</span>
       <span *ngIf="!requiresMultipleSignatures" translate>Unsent transactions</span>
-    </ion-list-header>
+    </ion-item-divider>
     <page-txp *ngFor="let txp of txps" [tx]="txp" [addressbook]="addressbook"></page-txp>
     <ion-item text-wrap color="primary" *ngIf="wallet.status && wallet.status.lockedBalanceSat">
       <span translate>Total Locked Balance</span>

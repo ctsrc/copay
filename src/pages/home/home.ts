@@ -15,7 +15,7 @@ import { ProposalsPage } from './proposals/proposals';
 import { TxDetailsPage } from '../tx-details/tx-details';
 import { TxpDetailsPage } from '../txp-details/txp-details';
 import { WalletDetailsPage } from '../wallet-details/wallet-details';
-//import { CoinbasePage } from '../integrations/coinbase/coinbase';
+import { BitPayCardIntroPage } from '../integrations/bitpay-card/bitpay-card-intro/bitpay-card-intro';
 
 // Providers
 import { BwcErrorProvider } from '../../providers/bwc-error/bwc-error';
@@ -394,7 +394,7 @@ export class HomePage {
         this.navCtrl.push(AmazonPage);
         break;
       case 'BitPayCardIntroPage':
-        //push BitPayCardIntroPage
+        this.navCtrl.push(BitPayCardIntroPage);
         break;
       case 'CoinbasePage':
         this.navCtrl.push(CoinbasePage);

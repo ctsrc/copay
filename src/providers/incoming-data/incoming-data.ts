@@ -227,8 +227,8 @@ export class IncomingDataProvider {
         default:
         case '0':
           // For BitPay card binding 
-          //this.navCtrl.push(BitPayCardPage,{ secret: secret, email: email, otp: otp}); //Glidera TODO
-          this.logger.debug('BitPay card TODO');
+          this.navCtrl.parent.select(0);
+          this.navCtrl.push(BitPayCardIntroPage, { secret: secret, email: email, otp: otp });
           break;
       }
       return true;
@@ -245,6 +245,7 @@ export class IncomingDataProvider {
       this.navCtrl.push(JoinWalletPage, { url: data, fromScan: true })
       return true;
     } else if (data && (data.substring(0, 2) == '6P' || this.checkPrivateKey(data))) {
+      this.logger.debug('Handling private key');
       this.showMenu({
         data: data,
         type: 'privateKey'
@@ -256,6 +257,7 @@ export class IncomingDataProvider {
     } else {
 
       if (this.navCtrl.getActive().name === 'ScanPage') {
+        this.logger.debug('Handling plain text');
         this.showMenu({
           data: data,
           type: 'text'

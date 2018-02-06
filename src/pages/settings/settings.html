@@ -21,7 +21,7 @@
       Share {{ appName }}
     </ion-item>
 
-    <ion-item-divider color="primary">{{'Preferences' | translate}}</ion-item-divider>
+    <ion-item-divider>{{'Preferences' | translate}}</ion-item-divider>
 
     <button ion-item (click)="openNotificationsPage()">
       <ion-icon name="ios-notifications-outline" item-start></ion-icon>
@@ -101,5 +101,6 @@
       <ion-icon name="ios-apps-outline" item-start></ion-icon>
       {{'About' | translate}} {{appName}}
     </button>
+    <ion-item-divider></ion-item-divider>
   </ion-list>
 </ion-content>
