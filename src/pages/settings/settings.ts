@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Logger } from '../../providers/logger/logger';
+import { TranslateService } from '@ngx-translate/core';
 
 //providers
 import { AppProvider } from '../../providers/app/app';
@@ -52,7 +53,8 @@ export class SettingsPage {
     private configProvider: ConfigProvider,
     private logger: Logger,
     private homeIntegrationsProvider: HomeIntegrationsProvider,
-    private platformProvider: PlatformProvider
+    private platformProvider: PlatformProvider,
+    private translate: TranslateService
   ) {
     this.appName = this.app.info.nameCase;
     this.currentLanguageName = this.language.getName(this.language.getCurrent());
@@ -130,7 +132,7 @@ export class SettingsPage {
     this.navCtrl.push(FeedbackCompletePage, { score: 4, skipped: true, fromSettings: true });
   }
 
-  public openIntegrationSettings(name: string): void {
+  public openIntegrationSettings(name: string): void {
     switch (name) {
       case 'coinbase':
         this.navCtrl.push(CoinbaseSettingsPage);
@@ -146,8 +148,8 @@ export class SettingsPage {
     var optIn = true;
     var title = null;
     var message = 'Help and support is available by joining the Dallar Discord server.'; // TODO gettextCatalog
-    var okText = 'Open'; // TODO gettextCatalog
-    var cancelText = 'Go Back'; // TODO gettextCatalog
+    let okText = this.translate.instant('Open');
+    let cancelText = this.translate.instant('Go Back');
     this.externalLinkProvider.open(url, optIn, title, message, okText, cancelText);
   }
 }

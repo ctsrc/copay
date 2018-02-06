@@ -27,6 +27,12 @@ msgstr ""
 msgid "About"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Accepted"
+msgstr ""
+
+>>>>>>> v4
 msgid "Account"
 msgstr ""
 
@@ -45,6 +51,12 @@ msgstr ""
 msgid "Add as a contact"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Add description"
+msgstr ""
+
+>>>>>>> v4
 msgid "Address"
 msgstr ""
 
@@ -67,6 +79,7 @@ msgid "All addresses"
 msgstr ""
 
 msgid ""
+<<<<<<< HEAD
 "All signing devices must be added to this multisig wallet before Dallar "
 "addresses can be created."
 msgstr ""
@@ -74,12 +87,19 @@ msgstr ""
 msgid "Allow Camera Access"
 msgstr ""
 
+=======
+"All signing devices must be added to this multisig wallet before bitcoin "
+"addresses can be created."
+msgstr ""
+
+>>>>>>> v4
 msgid "Almost done! Let's review."
 msgstr ""
 
 msgid "Alternative currency"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Amount"
 msgstr ""
 
@@ -88,12 +108,57 @@ msgstr ""
 
 msgid ""
 "Approximate Dallar network fee to transfer wallet's balance (with normal "
+=======
+msgid "Amazon.com is not available at this moment. Please try back later."
+msgstr ""
+
+msgid "Amount"
+msgstr ""
+
+msgid "Amount below minimum allowed"
+msgstr ""
+
+msgid "Amount too big"
+msgstr ""
+
+msgid ""
+"An update to this app is available. For your security, please update to the "
+"latest version."
+msgstr ""
+
+msgid "Anyone with your backup phrase can access or spend your bitcoin."
+msgstr ""
+
+msgid ""
+"Approximate Bitcoin network fee to transfer wallet's balance (with normal "
+>>>>>>> v4
 "priority)"
 msgstr ""
 
 msgid "Are you being watched?"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Are you sure you want to cancel and delete this wallet?"
+msgstr ""
+
+msgid "Are you sure you want to delete this contact?"
+msgstr ""
+
+msgid "Are you sure you want to delete this wallet?"
+msgstr ""
+
+msgid "Are you sure you want to reject this transaction?"
+msgstr ""
+
+msgid "Are you sure you want to remove this transaction?"
+msgstr ""
+
+msgid "Are you sure?"
+msgstr ""
+
+>>>>>>> v4
 msgid "Average confirmation time"
 msgstr ""
 
@@ -103,18 +168,90 @@ msgstr ""
 msgid "Backup"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Backup all your wallets before using this function"
+msgstr ""
+
+>>>>>>> v4
 msgid "Backup needed"
 msgstr ""
 
 msgid "Backup wallet"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Balance Hidden"
 msgstr ""
 
 msgid "Broadcast Payment"
 msgstr ""
 
+=======
+msgid "Backup your wallet before using this function"
+msgstr ""
+
+msgid "Bad wallet invitation"
+msgstr ""
+
+msgid "Balance Hidden"
+msgstr ""
+
+msgid ""
+"Bitcoin (BTC) miner fees are high due to record demand for limited space on "
+"the\n"
+"      Bitcoin network. BitPay does not receive and does not control bitcoin "
+"miner fees."
+msgstr ""
+
+msgid "Bitcoin Address"
+msgstr ""
+
+msgid "Bitcoin Cash Wallets"
+msgstr ""
+
+msgid "Bitcoin Network Fee Policy"
+msgstr ""
+
+msgid "Bitcoin Wallets"
+msgstr ""
+
+msgid "Bitcoin cash Payment"
+msgstr ""
+
+msgid "Bitcoin is a currency."
+msgstr ""
+
+msgid ""
+"Bitcoin is different &ndash; it cannot be safely held with a bank or web "
+"service."
+msgstr ""
+
+msgid "Bitcoin is secure,"
+msgstr ""
+
+msgid "Bitcoin miner fee"
+msgstr ""
+
+msgid "Bitcoin miner fees unusually high"
+msgstr ""
+
+msgid "Bitcoin network fee policy"
+msgstr ""
+
+msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgstr ""
+
+msgid "Broadcast Payment"
+msgstr ""
+
+msgid "Broadcasted"
+msgstr ""
+
+msgid "Broadcasting transaction..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Buy"
 msgstr ""
 
@@ -124,18 +261,54 @@ msgstr ""
 msgid "Buy a Gift Card"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Buying Bitcoin..."
+msgstr ""
+
+msgid "Buying Gift Card..."
+msgstr ""
+
+msgid "Calculating fee..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Cancel"
 msgstr ""
 
 msgid "Cancel invitation"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Canceling Gift Card..."
+msgstr ""
+
+msgid "Cannot join the same wallet more that once"
+msgstr ""
+
+msgid "Check the transaction on your wallet details"
+msgstr ""
+
+>>>>>>> v4
 msgid "Clear"
 msgstr ""
 
 msgid "Clear cache"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Click to accept"
+msgstr ""
+
+msgid "Click to pay"
+msgstr ""
+
+msgid "Click to send"
+msgstr ""
+
+>>>>>>> v4
 msgid "Click to shift"
 msgstr ""
 
@@ -163,27 +336,67 @@ msgstr ""
 msgid "Confirm purchase"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Confirmations"
 msgstr ""
 
+=======
+msgid "Confirm your new spending password"
+msgstr ""
+
+msgid "Confirmations"
+msgstr ""
+
+msgid "Connecting to Coinbase..."
+msgstr ""
+
+msgid "Connecting to Glidera..."
+msgstr ""
+
+msgid "Connecting to Shapeshift..."
+msgstr ""
+
+msgid "Connection reset by peer"
+msgstr ""
+
+>>>>>>> v4
 msgid "Continue &rarr;"
 msgstr ""
 
 msgid "Contribute Translations"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Copayer already in this wallet"
+msgstr ""
+
+msgid "Copayer already voted on this spend proposal"
+msgstr ""
+
+msgid "Copayer data mismatch"
+msgstr ""
+
+>>>>>>> v4
 msgid "Copayer joined"
 msgstr ""
 
 msgid "Copayer {{$index}}"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Copied to clipboard"
+msgstr ""
+
+>>>>>>> v4
 msgid "Copy this text as it is to a safe place (notepad or email)"
 msgstr ""
 
 msgid "Copy to clipboard"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Could not access the wallet at the server. Please check:"
 msgstr ""
 
@@ -248,6 +461,114 @@ msgid "Dallar network fee policy"
 msgstr ""
 
 msgid "Dallar transactions include a fee collected by miners on the network."
+=======
+msgid "Could not access Gift Card Service"
+msgstr ""
+
+msgid "Could not access the wallet at the server. Please check:"
+msgstr ""
+
+msgid "Could not access to Amazon.com"
+msgstr ""
+
+msgid "Could not access wallet"
+msgstr ""
+
+msgid "Could not add message to imported wallet without shared encrypting key"
+msgstr ""
+
+msgid "Could not build transaction"
+msgstr ""
+
+msgid "Could not create address"
+msgstr ""
+
+msgid "Could not create transaction"
+msgstr ""
+
+msgid "Could not create using the specified extended private key"
+msgstr ""
+
+msgid "Could not create using the specified extended public key"
+msgstr ""
+
+msgid "Could not create: Invalid wallet recovery phrase"
+msgstr ""
+
+msgid "Could not decrypt file, check your password"
+msgstr ""
+
+msgid "Could not delete payment proposal"
+msgstr ""
+
+msgid "Could not get dynamic fee"
+msgstr ""
+
+msgid "Could not get dynamic fee for level:"
+msgstr ""
+
+msgid "Could not get fee levels"
+msgstr ""
+
+msgid "Could not get the invoice"
+msgstr ""
+
+msgid "Could not import"
+msgstr ""
+
+msgid "Could not import. Check input file and spending password"
+msgstr ""
+
+msgid "Could not join wallet"
+msgstr ""
+
+msgid "Could not reject payment"
+msgstr ""
+
+msgid "Could not save preferences on the server"
+msgstr ""
+
+msgid "Could not send transaction"
+msgstr ""
+
+msgid "Could not update transaction history"
+msgstr ""
+
+msgid "Could not update wallet"
+msgstr ""
+
+msgid "Create a new wallet"
+msgstr ""
+
+msgid "Create bitcoin wallet"
+msgstr ""
+
+msgid "Create shared wallet"
+msgstr ""
+
+msgid "Created by"
+msgstr ""
+
+msgid "Created {{card.date | amTimeAgo}}"
+msgstr ""
+
+msgid "Creating Gift Card..."
+msgstr ""
+
+msgid "Creating Wallet..."
+msgstr ""
+
+msgid "Creating transaction..."
+msgstr ""
+
+msgid "Current fee rate for this policy"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Custom Amount"
+>>>>>>> v4
 msgstr ""
 
 msgid "Date"
@@ -265,6 +586,15 @@ msgstr ""
 msgid "Delete it and create a new one"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Deleting Wallet..."
+msgstr ""
+
+msgid "Deleting payment proposal..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Derivation Strategy"
 msgstr ""
 
@@ -288,12 +618,26 @@ msgstr ""
 msgid "Duplicate"
 msgstr ""
 
+<<<<<<< HEAD
 msgid ""
 "Each Dallar wallet can generate billions of addresses from your 12-word "
+=======
+msgid "Duplicating wallet..."
+msgstr ""
+
+msgid ""
+"Each bitcoin wallet can generate billions of addresses from your 12-word "
+>>>>>>> v4
 "backup. A new address is automatically generated\n"
 "      and shown each time you receive a payment."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Economy"
+msgstr ""
+
+>>>>>>> v4
 msgid "Edit"
 msgstr ""
 
@@ -303,7 +647,11 @@ msgstr ""
 msgid "Email Address"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Enable camera access in your device settings to get started."
+=======
+msgid "Empty addresses limit reached. New addresses cannot be generated."
+>>>>>>> v4
 msgstr ""
 
 msgid "Enable email notifications"
@@ -312,18 +660,55 @@ msgstr ""
 msgid "Enable push notifications"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Enable the camera to get started."
+=======
+msgid "Enter Spending Password"
+>>>>>>> v4
 msgstr ""
 
 msgid "Enter custom fee"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Enter new spending password"
+msgstr ""
+
+>>>>>>> v4
 msgid "Enter your password"
 msgstr ""
 
 msgid "Error"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Error at confirm"
+msgstr ""
+
+msgid "Error creating the invoice"
+msgstr ""
+
+msgid "Error creating wallet"
+msgstr ""
+
+msgid "Error getting SendMax information"
+msgstr ""
+
+msgid "Error in Payment Protocol"
+msgstr ""
+
+msgid "Error scanning funds:"
+msgstr ""
+
+msgid "Error sweeping wallet:"
+msgstr ""
+
+msgid "Exceeded daily limit of $500 per user"
+msgstr ""
+
+>>>>>>> v4
 msgid "Expired"
 msgstr ""
 
@@ -339,16 +724,44 @@ msgstr ""
 msgid "Export wallet"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Exporting via QR not supported for this wallet"
+msgstr ""
+
+>>>>>>> v4
 msgid "Extended Private Key"
 msgstr ""
 
 msgid "Extended Public Keys"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Fee"
 msgstr ""
 
 msgid "Fee:"
+=======
+msgid "Extracting Wallet information..."
+msgstr ""
+
+msgid "Failed to export"
+msgstr ""
+
+msgid "Fee"
+msgstr ""
+
+msgid "Fee level is not defined"
+msgstr ""
+
+msgid "Feedback could not be submitted. Please try again later."
+msgstr ""
+
+msgid "Fetching BitPay Account..."
+msgstr ""
+
+msgid "Fetching payment information"
+>>>>>>> v4
 msgstr ""
 
 msgid "File"
@@ -365,6 +778,12 @@ msgid ""
 "QR code"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Funds are locked by pending spend proposals"
+msgstr ""
+
+>>>>>>> v4
 msgid "Funds found:"
 msgstr ""
 
@@ -374,7 +793,17 @@ msgstr ""
 msgid "Generate new address"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Get news and updates from Dallar.org"
+=======
+msgid "Generating .csv file..."
+msgstr ""
+
+msgid "Generating new address..."
+msgstr ""
+
+msgid "Get news and updates from BitPay"
+>>>>>>> v4
 msgstr ""
 
 msgid "Get started"
@@ -383,6 +812,12 @@ msgstr ""
 msgid "Get started by adding your first one."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Getting fee levels..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Gift Card"
 msgstr ""
 
@@ -392,6 +827,15 @@ msgstr ""
 msgid "Gift Card is not available to use anymore"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Gift card expired"
+msgstr ""
+
+msgid "Go Back"
+msgstr ""
+
+>>>>>>> v4
 msgid "Got it"
 msgstr ""
 
@@ -401,6 +845,12 @@ msgstr ""
 msgid "Help &amp; support"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Help and support information is available at the website."
+msgstr ""
+
+>>>>>>> v4
 msgid "Hide"
 msgstr ""
 
@@ -410,6 +860,12 @@ msgstr ""
 msgid "Hide advanced options"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Hmm..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Home"
 msgstr ""
 
@@ -419,7 +875,20 @@ msgstr ""
 msgid "I agree to the"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "I have read, understood, and agree to the Terms of Use above."
+=======
+msgid "I don't like it"
+msgstr ""
+
+msgid "I have read, understood, and agree to the"
+msgstr ""
+
+msgid "I like the app"
+msgstr ""
+
+msgid "I think this app is terrible"
+>>>>>>> v4
 msgstr ""
 
 msgid "I understand"
@@ -429,11 +898,25 @@ msgid "I've written it down"
 msgstr ""
 
 msgid ""
+<<<<<<< HEAD
+=======
+"If enabled, Bitcoin Cash addresses will be shown using Copay style address, "
+"and not the new cashaddr format."
+msgstr ""
+
+msgid ""
+>>>>>>> v4
 "If enabled, all sensitive information (private key and recovery phrase) and "
 "actions (spending and exporting) associated with\n"
 "          this wallet will be protected."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "If enabled, the \"Services Card\" will appear in the Home tab."
+msgstr ""
+
+>>>>>>> v4
 msgid ""
 "If enabled, the Recent Transactions card - a list of transactions occuring "
 "across all wallets - will appear in the\n"
@@ -453,6 +936,12 @@ msgstr ""
 msgid "Import wallet"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Importing Wallet..."
+msgstr ""
+
+>>>>>>> v4
 msgid "In order to verify your wallet backup, please type your password."
 msgstr ""
 
@@ -468,6 +957,33 @@ msgstr ""
 msgid "Incorrect PIN, try again."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Incorrect code format"
+msgstr ""
+
+msgid "Incorrect network address"
+msgstr ""
+
+msgid "Insufficient funds"
+msgstr ""
+
+msgid "Insufficient funds for fee"
+msgstr ""
+
+msgid "Integrations"
+msgstr ""
+
+msgid "Invalid URL"
+msgstr ""
+
+msgid "Invalid address"
+msgstr ""
+
+msgid "Invalid derivation path"
+msgstr ""
+
+>>>>>>> v4
 msgid "Invoice expired"
 msgstr ""
 
@@ -479,6 +995,7 @@ msgstr ""
 
 msgid ""
 "It's a good idea to avoid reusing addresses - this both protects your "
+<<<<<<< HEAD
 "privacy and keeps your Dallar secure against\n"
 "        hypothetical attacks by quantum computers."
 msgstr ""
@@ -496,6 +1013,25 @@ msgid "Join wallet"
 msgstr ""
 
 msgid "Just scan the code to pay."
+=======
+"privacy and keeps your bitcoins secure against\n"
+"        hypothetical attacks by quantum computers."
+msgstr ""
+
+msgid "Join shared wallet"
+msgstr ""
+
+msgid "Join wallet"
+msgstr ""
+
+msgid "Joining Wallet..."
+msgstr ""
+
+msgid "Just scan the code to pay."
+msgstr ""
+
+msgid "Key already associated with an existing wallet"
+>>>>>>> v4
 msgstr ""
 
 msgid "Language"
@@ -504,31 +1040,56 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Let's get started."
 msgstr ""
 
+=======
+>>>>>>> v4
 msgid "Let's verify your backup phrase."
 msgstr ""
 
 msgid "Loading addresses..."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Loading transaction info..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Loading..."
 msgstr ""
 
 msgid "Lock"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Locktime in effect. Please wait to create a new spend proposal"
+msgstr ""
+
+msgid "Locktime in effect. Please wait to remove this spend proposal"
+msgstr ""
+
+>>>>>>> v4
 msgid "Low amount inputs"
 msgstr ""
 
 msgid "Makes sense"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Manage Wallets"
 msgstr ""
 
 msgid "Me"
+=======
+msgid "Me"
+msgstr ""
+
+msgid "Meh - it's alright"
+>>>>>>> v4
 msgstr ""
 
 msgid "Memo"
@@ -537,18 +1098,41 @@ msgstr ""
 msgid "Mercado Livre Brazil Gift Cards"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid ""
+"Mercadolibre Gift Card Service is not available at this moment. Please try "
+"back later."
+msgstr ""
+
+>>>>>>> v4
 msgid "Merchant Message"
 msgstr ""
 
 msgid "Miner Fee"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Missing parameter"
+msgstr ""
+
+msgid "Missing private keys to sign"
+msgstr ""
+
+>>>>>>> v4
 msgid "More Options"
 msgstr ""
 
 msgid "Moved"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Moved Funds"
+msgstr ""
+
+>>>>>>> v4
 msgid "Multiple recipients"
 msgstr ""
 
@@ -564,6 +1148,7 @@ msgstr ""
 msgid "Network Cost"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "New Proposal"
 msgstr ""
 
@@ -571,6 +1156,27 @@ msgid "New personal wallet"
 msgstr ""
 
 msgid "No backup, no Dallar."
+=======
+msgid "Network error"
+msgstr ""
+
+msgid "New Proposal"
+msgstr ""
+
+msgid "New address could not be generated. Please try again."
+msgstr ""
+
+msgid "New personal wallet"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "No access key defined"
+msgstr ""
+
+msgid "No backup, no bitcoin."
+>>>>>>> v4
 msgstr ""
 
 msgid "No contacts yet"
@@ -579,18 +1185,31 @@ msgstr ""
 msgid "No entries for this log level"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "No password"
+msgstr ""
+
+>>>>>>> v4
 msgid "No pending proposals"
 msgstr ""
 
 msgid "No private key"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "No signing proposal: No private key"
+msgstr ""
+
+>>>>>>> v4
 msgid "No transactions yet"
 msgstr ""
 
 msgid "No wallet"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "No wallets available to receive funds"
 msgstr ""
 
@@ -601,6 +1220,42 @@ msgid "Non eligible BTC wallets"
 msgstr ""
 
 msgid "Not even the creators of Dallar can access it."
+=======
+msgid "No wallet found"
+msgstr ""
+
+msgid "No wallets available"
+msgstr ""
+
+msgid "No wallets available to receive funds"
+msgstr ""
+
+msgid "No wallets available to use ShapeShift"
+msgstr ""
+
+msgid "No wallets eligible for Bitcoin Cash support"
+msgstr ""
+
+msgid "No wallets with funds"
+msgstr ""
+
+msgid "Non BIP44 wallet"
+msgstr ""
+
+msgid "Non eligible BTC wallets"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Not authorized"
+msgstr ""
+
+msgid "Not even BitPay can access it."
+msgstr ""
+
+msgid "Not funds found"
+>>>>>>> v4
 msgstr ""
 
 msgid "Not now"
@@ -610,7 +1265,11 @@ msgid "Note"
 msgstr ""
 
 msgid ""
+<<<<<<< HEAD
 "Note: if this BCH wallet was duplicated from a DAL wallet, they share the "
+=======
+"Note: if this BCH wallet was duplicated from a BTC wallet, they share the "
+>>>>>>> v4
 "same recovery phrase."
 msgstr ""
 
@@ -634,13 +1293,45 @@ msgid ""
 "cameras? Shoulder-spies?"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "OAuth Code"
+=======
+msgid "OK"
+msgstr ""
+
+msgid "Oh no!"
+msgstr ""
+
+msgid "Ok"
+>>>>>>> v4
 msgstr ""
 
 msgid "On this screen you can see all your wallets, accounts, and assets."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Open Settings"
+=======
+msgid "Open"
+msgstr ""
+
+msgid "Open Crowdin"
+msgstr ""
+
+msgid "Open GitHub"
+msgstr ""
+
+msgid "Open GitHub Project"
+msgstr ""
+
+msgid "Open Insight"
+msgstr ""
+
+msgid "Open Translation Community"
+msgstr ""
+
+msgid "Open the recovery tool"
+>>>>>>> v4
 msgstr ""
 
 msgid "Open wallet"
@@ -649,12 +1340,30 @@ msgstr ""
 msgid "Open website"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Password"
 msgstr ""
 
 msgid "Passwords do not match"
 msgstr ""
 
+=======
+msgid "Ouch!"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password required. Make sure to enter your password in advanced options"
+msgstr ""
+
+msgid "Passwords do not match"
+msgstr ""
+
+msgid "Payment Accepted"
+msgstr ""
+
+>>>>>>> v4
 msgid "Payment Expires:"
 msgstr ""
 
@@ -664,6 +1373,12 @@ msgstr ""
 msgid "Payment Proposals"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Payment Protocol Invalid"
+msgstr ""
+
+>>>>>>> v4
 msgid "Payment Received"
 msgstr ""
 
@@ -682,6 +1397,12 @@ msgid ""
 "          it was created."
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Payment address was translated to new Bitcoin Cash address format: {{addr}}"
+msgstr ""
+
+>>>>>>> v4
 msgid "Payment details"
 msgstr ""
 
@@ -694,15 +1415,32 @@ msgstr ""
 msgid "Permanently delete this wallet."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Please carefully write down this phrase."
 msgstr ""
 
 msgid "Please connect a camera to get started."
+=======
+msgid "Personal Wallet"
+msgstr ""
+
+msgid "Please carefully write down this phrase."
+msgstr ""
+
+msgid "Please enter a password to encrypt your wallet keys on this device storage"
+msgstr ""
+
+msgid "Please enter the recovery phrase"
+msgstr ""
+
+msgid "Please enter the wallet recovery phrase"
+>>>>>>> v4
 msgstr ""
 
 msgid "Please tap each word in the correct order."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Preferences"
 msgstr ""
 
@@ -712,6 +1450,41 @@ msgstr ""
 msgid "Proposal Accepted"
 msgstr ""
 
+=======
+msgid "Please upgrade Copay to perform this action"
+msgstr ""
+
+msgid "Please, select your backup file"
+msgstr ""
+
+msgid "Preferences"
+msgstr ""
+
+msgid "Preparing addresses..."
+msgstr ""
+
+msgid "Preparing backup..."
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Private Key"
+msgstr ""
+
+msgid "Private key encrypted. Enter password"
+msgstr ""
+
+msgid "Private key is encrypted, cannot sign"
+msgstr ""
+
+msgid "Proposal Accepted"
+msgstr ""
+
+msgid "Proposal Created"
+msgstr ""
+
+>>>>>>> v4
 msgid "Proposal Deleted"
 msgstr ""
 
@@ -721,6 +1494,12 @@ msgstr ""
 msgid "Proposals"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Purchase amount must be a value between 50 and 2000"
+msgstr ""
+
+>>>>>>> v4
 msgid ""
 "Push notifications for {{appName}} are currently disabled. Enable them in "
 "the Settings app."
@@ -738,6 +1517,15 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Read more in our Wiki"
+msgstr ""
+
+msgid "Read only wallet"
+msgstr ""
+
+>>>>>>> v4
 msgid "Receive"
 msgstr ""
 
@@ -747,6 +1535,12 @@ msgstr ""
 msgid "Received"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Received Funds"
+msgstr ""
+
+>>>>>>> v4
 msgid "Receiving"
 msgstr ""
 
@@ -765,12 +1559,27 @@ msgstr ""
 msgid "Recipients"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Recreating Wallet..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Redeem Now"
 msgstr ""
 
 msgid "Reject"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Rejected"
+msgstr ""
+
+msgid "Rejecting payment proposal..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Release information"
 msgstr ""
 
@@ -795,7 +1604,11 @@ msgstr ""
 msgid "Restore from backup"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Retry Camera"
+=======
+msgid "Retrieving inputs information"
+>>>>>>> v4
 msgstr ""
 
 msgid "Save"
@@ -804,15 +1617,27 @@ msgstr ""
 msgid "Scan"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Scan QR Codes"
 msgstr ""
 
+=======
+>>>>>>> v4
 msgid "Scan addresses for funds"
 msgstr ""
 
 msgid "Scan again"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Scanner not supported"
+msgstr ""
+
+msgid "Scanning Wallet funds..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Scanning funds"
 msgstr ""
 
@@ -828,6 +1653,12 @@ msgstr ""
 msgid "Select a wallet"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Selling Bitcoin..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Send"
 msgstr ""
 
@@ -840,6 +1671,15 @@ msgstr ""
 msgid "Send addresses by email"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Send by email"
+msgstr ""
+
+msgid "Send from"
+msgstr ""
+
+>>>>>>> v4
 msgid "Send payment to this address"
 msgstr ""
 
@@ -849,12 +1689,42 @@ msgstr ""
 msgid "Sending"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Sending maximum amount"
 msgstr ""
 
 msgid "Sent"
 msgstr ""
 
+=======
+msgid "Sending 2FA code..."
+msgstr ""
+
+msgid "Sending feedback..."
+msgstr ""
+
+msgid "Sending maximum amount"
+msgstr ""
+
+msgid "Sending transaction..."
+msgstr ""
+
+msgid "Sent"
+msgstr ""
+
+msgid "Sent Funds"
+msgstr ""
+
+msgid "Server response could not be verified"
+msgstr ""
+
+msgid "Service not available"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+>>>>>>> v4
 msgid "Session Log"
 msgstr ""
 
@@ -885,29 +1755,69 @@ msgstr ""
 msgid "Show all"
 msgstr ""
 
+<<<<<<< HEAD
 msgid ""
 "Since only you control your money, you will need to save your backup phrase "
+=======
+msgid "Signatures rejected by server"
+msgstr ""
+
+msgid "Signing transaction..."
+msgstr ""
+
+msgid ""
+"Since only you control your money, you’ll need to save your backup phrase "
+>>>>>>> v4
 "in case this app is deleted."
 msgstr ""
 
 msgid "Skip"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Slide to accept"
+msgstr ""
+
+msgid "Slide to pay"
+msgstr ""
+
+msgid "Slide to send"
+msgstr ""
+
+>>>>>>> v4
 msgid ""
 "Some of your wallets are not eligible for Bitcoin Cash support. You can try "
 "to access BCH funds from these wallets\n"
 "        using the"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Spendable"
 msgstr ""
 
 msgid "Spending this balance will need significant Dallar network fees"
+=======
+msgid "Spend proposal is not accepted"
+msgstr ""
+
+msgid "Spend proposal not found"
+msgstr ""
+
+msgid "Spendable"
+msgstr ""
+
+msgid "Spending Password needed"
+msgstr ""
+
+msgid "Spending this balance will need significant Bitcoin network fees"
+>>>>>>> v4
 msgstr ""
 
 msgid "Still pending"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Sweep"
 msgstr ""
 
@@ -918,11 +1828,38 @@ msgid "THIS ACTION CANNOT BE REVERSED"
 msgstr ""
 
 msgid "Tap To Read Terms of Use"
+=======
+msgid "Super Economy"
+msgstr ""
+
+msgid "Sweep"
+msgstr ""
+
+msgid "Sweep Completed"
+msgstr ""
+
+msgid "Sweep paper wallet"
+msgstr ""
+
+msgid "Sweeping Wallet..."
+msgstr ""
+
+msgid "THIS ACTION CANNOT BE REVERSED"
+msgstr ""
+
+msgid "Take control of your money,"
+>>>>>>> v4
 msgstr ""
 
 msgid "Tap and hold to show"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Terms of Use"
+msgstr ""
+
+>>>>>>> v4
 msgid "Terms of use"
 msgstr ""
 
@@ -932,9 +1869,26 @@ msgstr ""
 msgid "Thank you!"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "The derivation path"
 msgstr ""
 
+=======
+msgid "Thanks!"
+msgstr ""
+
+msgid ""
+"That's exciting to hear. We'd love to earn that fifth star from you – how "
+"could we improve your experience?"
+msgstr ""
+
+msgid "The derivation path"
+msgstr ""
+
+msgid "The exchange rate changes with the market."
+msgstr ""
+
+>>>>>>> v4
 msgid ""
 "The higher the fee, the greater the incentive a miner has to include that "
 "transaction in a block. Current fees are determined based on network load "
@@ -951,9 +1905,23 @@ msgstr ""
 msgid "The password of the recovery phrase (if set)"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "The payment was removed by creator"
 msgstr ""
 
+=======
+msgid ""
+"The payment was created but could not be completed. Please try again from "
+"home screen"
+msgstr ""
+
+msgid "The payment was removed by creator"
+msgstr ""
+
+msgid "The request could not be understood by the server"
+msgstr ""
+
+>>>>>>> v4
 msgid ""
 "The restore process will stop when 20 addresses are generated in a row "
 "which contain no funds. To safely generate\n"
@@ -961,10 +1929,34 @@ msgid ""
 "which has already been generated."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "The wallet service URL"
 msgstr ""
 
 msgid "This app stores your Dallar with cutting-edge security."
+=======
+msgid "The spend proposal is not pending"
+msgstr ""
+
+msgid "The wallet service URL"
+msgstr ""
+
+msgid "There is an error in the form"
+msgstr ""
+
+msgid ""
+"There's obviously something we're doing wrong. How could we improve your "
+"experience?"
+msgstr ""
+
+msgid "This app is fantastic!"
+msgstr ""
+
+msgid "This app stores your bitcoin with cutting-edge security."
+msgstr ""
+
+msgid "This bitcoin payment request has expired."
+>>>>>>> v4
 msgstr ""
 
 msgid ""
@@ -973,8 +1965,13 @@ msgid ""
 msgstr ""
 
 msgid ""
+<<<<<<< HEAD
 "This transaction amount is too small compared to current Dallar network "
 "fees. Spending these funds will need a Dallar network\n"
+=======
+"This transaction amount is too small compared to current Bitcoin network "
+"fees. Spending these funds will need a Bitcoin network\n"
+>>>>>>> v4
 "        fee cost comparable to the funds itself."
 msgstr ""
 
@@ -995,7 +1992,14 @@ msgstr ""
 msgid "To"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "To get started, you'll need to create a Dallar wallet and get some Dallar."
+=======
+msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgstr ""
+
+msgid "Top up in progress..."
+>>>>>>> v4
 msgstr ""
 
 msgid "Total"
@@ -1007,6 +2011,7 @@ msgstr ""
 msgid "Total wallet inputs"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Transaction History"
 msgstr ""
 
@@ -1017,6 +2022,36 @@ msgid "Transfer to Contact"
 msgstr ""
 
 msgid "Transfer to Dallar Wallet"
+=======
+msgid "Transaction"
+msgstr ""
+
+msgid "Transaction History"
+msgstr ""
+
+msgid "Transaction already broadcasted"
+msgstr ""
+
+msgid "Transaction has not been created"
+msgstr ""
+
+msgid "Transaction not available at this time"
+msgstr ""
+
+msgid "Transaction not found"
+msgstr ""
+
+msgid "Transactions without fee are not supported."
+msgstr ""
+
+msgid "Transfer to Bitcoin Cash Wallet"
+msgstr ""
+
+msgid "Transfer to Bitcoin Wallet"
+msgstr ""
+
+msgid "Transfer to Contact"
+>>>>>>> v4
 msgstr ""
 
 msgid "Try again in {{expires}}"
@@ -1034,6 +2069,18 @@ msgstr ""
 msgid "Unused addresses limit"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Update Available"
+msgstr ""
+
+msgid "Updating Gift Card..."
+msgstr ""
+
+msgid "Updating Gift Cards..."
+msgstr ""
+
+>>>>>>> v4
 msgid "Updating pending proposals. Please stand by"
 msgstr ""
 
@@ -1043,15 +2090,39 @@ msgstr ""
 msgid "Updating... Please stand by"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Urgent"
+msgstr ""
+
+msgid "Use Bitcoin Cash Copay Style Addresses"
+msgstr ""
+
+>>>>>>> v4
 msgid "Use Unconfirmed Funds"
 msgstr ""
 
 msgid "Use default url"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Version"
 msgstr ""
 
+=======
+msgid "Validating recovery phrase..."
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "View Transaction on Insight"
+msgstr ""
+
+msgid "View Update"
+msgstr ""
+
+>>>>>>> v4
 msgid "View all addresses"
 msgstr ""
 
@@ -1116,12 +2187,24 @@ msgstr ""
 msgid "Wallet Network"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Wallet Recovery Phrase is invalid"
+msgstr ""
+
+>>>>>>> v4
 msgid "Wallet Service URL"
 msgstr ""
 
 msgid "Wallet Settings"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Wallet already exists"
+msgstr ""
+
+>>>>>>> v4
 msgid "Wallet created"
 msgstr ""
 
@@ -1134,12 +2217,41 @@ msgstr ""
 msgid "Wallet invitation"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Wallet key"
 msgstr ""
 
 msgid "Wallet not backed up"
 msgstr ""
 
+=======
+msgid "Wallet is full"
+msgstr ""
+
+msgid "Wallet is locked"
+msgstr ""
+
+msgid "Wallet is not complete"
+msgstr ""
+
+msgid "Wallet key"
+msgstr ""
+
+msgid "Wallet needs backup"
+msgstr ""
+
+msgid "Wallet not backed up"
+msgstr ""
+
+msgid "Wallet not found"
+msgstr ""
+
+msgid ""
+"Wallet not registered at the wallet service. Recreate it from \"Create "
+"Wallet\" using \"Advanced Options\" to set your recovery phrase"
+msgstr ""
+
+>>>>>>> v4
 msgid "Wallet recovery phrase"
 msgstr ""
 
@@ -1149,12 +2261,19 @@ msgstr ""
 msgid "Wallet service URL"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+msgid "Wallet service not found"
+msgstr ""
+
+>>>>>>> v4
 msgid "Warning!"
 msgstr ""
 
 msgid "Warning: this transaction has unconfirmed inputs"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "We'll confirm on the next screen."
 msgstr ""
 
@@ -1162,6 +2281,15 @@ msgid "Website"
 msgstr ""
 
 msgid "Welcome to Dallar."
+=======
+msgid "We'd love to do better. How could we improve your experience?"
+msgstr ""
+
+msgid "We'll confirm on the next screen."
+msgstr ""
+
+msgid "Website"
+>>>>>>> v4
 msgstr ""
 
 msgid ""
@@ -1191,6 +2319,7 @@ msgstr ""
 msgid "Would you be willing to rate {{appName}} in the app store?"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
 msgstr ""
 
@@ -1203,6 +2332,40 @@ msgid ""
 msgstr ""
 
 msgid "You control your Dallar."
+=======
+msgid "Wrong number of recovery words:"
+msgstr ""
+
+msgid "Wrong password"
+msgstr ""
+
+msgid "Wrong spending password"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid ""
+"You can make contributions by signing up on our Crowdin community "
+"translation website. We’re looking forward to hearing from you!"
+msgstr ""
+
+msgid ""
+"You can see the latest developments and contribute to this open source app "
+"by visiting our project on GitHub."
+msgstr ""
+
+msgid "You can spend bitcoin at millions of websites and stores worldwide."
+msgstr ""
+
+msgid "You can still export it from Advanced &gt; Export."
+msgstr ""
+
+msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
+msgstr ""
+
+msgid "You control your bitcoin."
+>>>>>>> v4
 msgstr ""
 
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
@@ -1216,11 +2379,22 @@ msgstr ""
 msgid "Your Gift Cards"
 msgstr ""
 
+<<<<<<< HEAD
 msgid ""
 "Your extended private keys are all that is needed to access your Dallar "
 "funds. Be sure to protect your private\n"
 "        keys and store them only on secure devices. The Dallar dev team "
 "does not have access to your private keys, so you alone are responsible\n"
+=======
+msgid "Your bitcoin wallet is ready!"
+msgstr ""
+
+msgid ""
+"Your extended private keys are all that is needed to access your bitcoin "
+"funds. Be sure to protect your private\n"
+"        keys and store them only on secure devices. BitPay does not have "
+"access to your private keys, so you alone are responsible\n"
+>>>>>>> v4
 "        for your keys. If you share key access with external services, you "
 "take responsibility for the risk of theft or breach.\n"
 "        Only advanced users should handle extended private keys directly."
@@ -1241,7 +2415,18 @@ msgstr ""
 msgid "Your wallet is never saved to cloud storage or standard device backups."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "Your wallets are ready!"
+=======
+msgid ""
+"Your wallet key will be encrypted. The Spending Password cannot be "
+"recovered. Be sure to write it down."
+msgstr ""
+
+msgid ""
+"Your wallet keys will be stored in plan text in this device, if an other "
+"app access the store it will be able to access your Bitcoin"
+>>>>>>> v4
 msgstr ""
 
 msgid "[Balance Hidden]"
@@ -1255,10 +2440,26 @@ msgid ""
 "destination address."
 msgstr ""
 
+<<<<<<< HEAD
 msgid "appreciation in a thankless world."
 msgstr ""
 
 msgid "cryptocurrency."
+=======
+msgid "digital money."
+msgstr ""
+
+msgid "get started with bitcoin."
+msgstr ""
+
+msgid "me"
+msgstr ""
+
+msgid "no password"
+msgstr ""
+
+msgid "password mismatch"
+>>>>>>> v4
 msgstr ""
 
 msgid "preparing..."
@@ -1270,6 +2471,7 @@ msgstr ""
 msgid "redeemable on Mercado Livre (Brazil)"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "{{'Reject'| translate}}"
 msgstr ""
 
@@ -1278,12 +2480,23 @@ msgid ""
 "information, networking and Copayer synchronization.\n"
 "          The default configuration points to "
 "https://explorer.dallar.org:3232/bws/api (Dallar's public BWS instance)."
+=======
+msgid ""
+"{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain "
+"information, networking and Copayer synchronization.\n"
+"          The default configuration points to https://bws.bitpay.com "
+"(BitPay's public BWS instance)."
+>>>>>>> v4
 msgstr ""
 
 msgid "{{option.value.label}}"
 msgstr ""
 
+<<<<<<< HEAD
 msgid "{{tx.txp[wallet.id].feeRatePerStr}} of the transaction"
+=======
+msgid "{{tx.txp[wallet.id].feeRatePerStr}} of sending amount"
+>>>>>>> v4
 msgstr ""
 
 msgid "{{updatingTxHistoryProgress}} transactions downloaded"
