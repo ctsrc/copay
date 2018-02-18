@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Logger } from '../../../../../providers/logger/logger';
-import { TranslateService } from '@ngx-translate/core';
 
 //providers
-import { ProfileProvider } from '../../../../../providers/profile/profile';
-import { PopupProvider } from '../../../../../providers/popup/popup';
 import { OnGoingProcessProvider } from '../../../../../providers/on-going-process/on-going-process';
+import { PopupProvider } from '../../../../../providers/popup/popup';
+import { ProfileProvider } from '../../../../../providers/profile/profile';
 import { PushNotificationsProvider } from '../../../../../providers/push-notifications/push-notifications';
 
 @Component({
@@ -53,7 +53,7 @@ export class WalletDeletePage {
     this.profileProvider.deleteWalletClient(this.wallet).then(() => {
       this.onGoingProcessProvider.set('deletingWallet', false);
       this.pushNotificationsProvider.unsubscribe(this.wallet);
-      this.navCtrl.popToRoot();
+      this.navCtrl.popToRoot({ animate: false });
       this.navCtrl.parent.select(0);
     }).catch((err) => {
       this.popupProvider.ionicAlert(this.translate.instant('Error'), err.message || err);

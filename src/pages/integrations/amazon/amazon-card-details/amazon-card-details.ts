@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
-import { Logger } from '../../../../providers/logger/logger';
 import * as _ from 'lodash';
+import { Logger } from '../../../../providers/logger/logger';
 
 // Provider
 import { AmazonProvider } from '../../../../providers/amazon/amazon';
@@ -55,7 +55,7 @@ export class AmazonCardDetailsPage {
     this.amazonProvider.savePendingGiftCard(this.card, {
       remove: true
     }, (err: any) => {
-      this.cancel();
+      this.close();
     });
   }
 
@@ -63,18 +63,12 @@ export class AmazonCardDetailsPage {
     if (!this.updateGiftCard) return;
     this.onGoingProcessProvider.set('updatingGiftCard', true);
     this.amazonProvider.getPendingGiftCards((err: any, gcds: any) => {
-      if (_.isEmpty(gcds)) {
-        this.onGoingProcessProvider.set('updatingGiftCard', false);
-      }
+      this.onGoingProcessProvider.set('updatingGiftCard', false);
       if (err) {
         this.popupProvider.ionicAlert('Error', err);
         return;
       }
-      var index = 0;
       _.forEach(gcds, function (dataFromStorage) {
-        if (++index == Object.keys(gcds).length) {
-          this.onGoingProcessProvider.set('updatingGiftCard', false);
-        }
         if (dataFromStorage.invoiceId == this.card.invoiceId) {
           this.logger.debug("creating gift card");
           this.amazonProvider.createGiftCard(dataFromStorage, (err: any, giftCard: any) => {
@@ -90,7 +84,7 @@ export class AmazonCardDetailsPage {
                 this.amazonProvider.savePendingGiftCard(newData, {
                   remove: true
                 }, (err: any) => {
-                  this.cancel();
+                  this.close();
                 });
                 return;
               }
@@ -106,7 +100,7 @@ export class AmazonCardDetailsPage {
     });
   }
 
-  public cancel(): void {
+  public close(): void {
     this.viewCtrl.dismiss();
   }
 

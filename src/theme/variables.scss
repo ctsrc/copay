@@ -35,6 +35,8 @@ $colors: (
 
 // Refresh color
 $refresher-icon-color: color($colors, primary);
+$refresher-icon-font-size: 12.5px;
+$refresher-height: 60px;
 
 // Toolbar
 $toolbar-text-color: color($colors, light);
@@ -76,6 +78,15 @@ $list-ios-header-font-size: 1.3rem;
 $searchbar-ios-background-color: color($colors, light);;
 $searchbar-ios-padding-vertical: 16px;
 $searchbar-ios-padding-horizontal: 16px;
+$tabs-ios-border-color: rgba(0, 0, 0, .1);
+
+$item-ios-body-text-font-size: 1.4rem;
+$item-ios-divider-background: color($colors, blank);
+$item-ios-padding-top: 16px;
+$item-ios-padding-bottom: 16px;
+
+$list-ios-border-color: color($colors, light);
+$list-ios-header-font-size: 1.5rem;
 $list-ios-margin-bottom: 0;
 
 $searchbar-ios-padding-horizontal: 8px;
@@ -85,10 +96,15 @@ $card-ios-header-color: color($colors, dark);
 $item-ios-divider-color: $color-secondary;
 $toggle-ios-handle-background-color: $color-secondary;
 $card-ios-box-shadow: 0 2px 2px 0 rgba(136, 157, 165, .14), 0 3px 1px -2px rgba(136, 157, 165, .2), 0 1px 5px 0 rgba(136, 157, 165, .12);
+
+$note-ios-color: color($colors, grey);
+
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+$item-md-font-size: 1.4rem;
+$item-md-divider-background: color($colors, blank);
 $item-md-padding-top: 16px;
 $item-md-padding-bottom: 16px;
 $item-md-divider-background: color($colors, blank);
@@ -106,6 +122,8 @@ $searchbar-md-padding-top: 16px;
 $list-md-border-color: color($colors, light);
 $list-md-header-margin-bottom: 0;
 $list-md-margin-bottom: 0;
+
+$note-md-color: color($colors, grey);
 
 $toolbar-background: $color-primary;
 

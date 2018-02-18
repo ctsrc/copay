@@ -1,19 +1,19 @@
 import { Component } from "@angular/core";
-import { NavController } from 'ionic-angular';
-import { Logger } from "../../../providers/logger/logger";
-import * as lodash from 'lodash';
 import { TranslateService } from '@ngx-translate/core';
+import { NavController } from 'ionic-angular';
+import * as lodash from 'lodash';
+import { Logger } from "../../../providers/logger/logger";
 
 // Providers
-import { WalletProvider } from "../../../providers/wallet/wallet";
-import { ProfileProvider } from '../../../providers/profile/profile';
 import { BwcErrorProvider } from "../../../providers/bwc-error/bwc-error";
-import { TxFormatProvider } from "../../../providers/tx-format/tx-format";
 import { BwcProvider } from "../../../providers/bwc/bwc";
-import { OnGoingProcessProvider } from "../../../providers/on-going-process/on-going-process";
-import { PushNotificationsProvider } from "../../../providers/push-notifications/push-notifications";
 import { ExternalLinkProvider } from "../../../providers/external-link/external-link";
+import { OnGoingProcessProvider } from "../../../providers/on-going-process/on-going-process";
 import { PopupProvider } from "../../../providers/popup/popup";
+import { ProfileProvider } from '../../../providers/profile/profile';
+import { PushNotificationsProvider } from "../../../providers/push-notifications/push-notifications";
+import { TxFormatProvider } from "../../../providers/tx-format/tx-format";
+import { WalletProvider } from "../../../providers/wallet/wallet";
 
 @Component({
 	selector: 'page-bitcoin-cash',
@@ -62,7 +62,7 @@ export class BitcoinCashPage {
 
 		let xPubKeyIndex = lodash.keyBy(this.walletsBCH, "credentials.xPubKey");
 
-		this.walletsBTC = lodash.filter(this.walletsBTC, function (w) {
+		this.walletsBTC = lodash.filter(this.walletsBTC, w => {
 			return !xPubKeyIndex[w.credentials.xPubKey];
 		});
 
@@ -93,7 +93,7 @@ export class BitcoinCashPage {
 		});
 	}
 
-	openRecoveryToolLink(): void {
+	public openRecoveryToolLink(): void {
 		let url = 'https://bitpay.github.io/copay-recovery/';
 		let optIn = true;
 		let title = this.translate.instant('Open the recovery tool');
@@ -102,8 +102,8 @@ export class BitcoinCashPage {
 		this.externalLinkProvider.open(url, optIn, title, null, okText, cancelText);
 	}
 
-	duplicate(wallet: any) {
-		this.logger.debug('Duplicating wallet for BCH:' + wallet.id + ':' + wallet.name);
+	public duplicate(wallet: any) {
+		this.logger.debug('Duplicating wallet for BCH: ' + wallet.id + ': ' + wallet.name);
 
 		let opts: any = {
 			name: wallet.name + '[BCH]',
@@ -140,8 +140,6 @@ export class BitcoinCashPage {
 						this.profileProvider.createWallet(opts).then((newWallet) => {
 							return resolve({ newWallet: newWallet, isNew: true });
 						});
-					}).catch((err) => {
-						return reject(err);
 					});
 				}).catch((err) => {
 					return reject(err);
@@ -181,7 +179,7 @@ export class BitcoinCashPage {
 					if (isNew)
 						this.walletProvider.startScan(newWallet);
 
-					this.navCtrl.popToRoot();
+					this.navCtrl.popToRoot({ animate: false });
 					this.navCtrl.parent.select(0);
 				});
 			}).catch((err) => {
@@ -189,7 +187,6 @@ export class BitcoinCashPage {
 				setErr(err);
 			});
 		}).catch((err) => {
-			this.onGoingProcessProvider.set('duplicatingWallet', false);
 			setErr(err);
 		});
 	}

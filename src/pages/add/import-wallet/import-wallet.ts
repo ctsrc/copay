@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { Logger } from '../../../providers/logger/logger';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { Events, NavController, NavParams } from 'ionic-angular';
+import { Logger } from '../../../providers/logger/logger';
 
 // Pages
 import { TabsPage } from '../../tabs/tabs';
@@ -13,8 +13,8 @@ import { ConfigProvider } from '../../../providers/config/config';
 import { DerivationPathHelperProvider } from '../../../providers/derivation-path-helper/derivation-path-helper';
 import { OnGoingProcessProvider } from '../../../providers/on-going-process/on-going-process';
 import { PlatformProvider } from '../../../providers/platform/platform';
-import { ProfileProvider } from '../../../providers/profile/profile';
 import { PopupProvider } from '../../../providers/popup/popup';
+import { ProfileProvider } from '../../../providers/profile/profile';
 import { WalletProvider } from '../../../providers/wallet/wallet';
 
 @Component({
@@ -54,7 +54,8 @@ export class ImportWalletPage {
     private logger: Logger,
     private onGoingProcessProvider: OnGoingProcessProvider,
     private profileProvider: ProfileProvider,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private events: Events
   ) {
     this.reader = new FileReader();
     this.defaults = this.configProvider.getDefaults();
@@ -95,9 +96,12 @@ export class ImportWalletPage {
 
     switch (tab) {
       case 'words':
+        this.file = null;
+        this.formFile = null;
         this.importForm.get('words').setValidators([Validators.required]);
-        this.importForm.get('file').clearValidators();
         this.importForm.get('filePassword').clearValidators();
+        if (this.isCordova || this.isSafari) this.importForm.get('backupText').clearValidators();
+        else this.importForm.get('file').clearValidators();
         break;
       case 'file':
         if (this.isCordova || this.isSafari) this.importForm.get('backupText').setValidators([Validators.required]);
@@ -115,6 +119,7 @@ export class ImportWalletPage {
     this.importForm.get('words').updateValueAndValidity();
     this.importForm.get('file').updateValueAndValidity();
     this.importForm.get('filePassword').updateValueAndValidity();
+    this.importForm.get('backupText').updateValueAndValidity();
   }
 
   normalizeMnemonic(words: string) {
@@ -199,6 +204,7 @@ export class ImportWalletPage {
   private finish(wallet: any): void {
     this.walletProvider.updateRemotePreferences(wallet).then(() => {
       this.profileProvider.setBackupFlag(wallet.credentials.walletId);
+      this.events.publish('Local/WalletAction', wallet.credentials.walletId);
       if (this.fromOnboarding) {
         this.profileProvider.setDisclaimerAccepted().catch((err: any) => {
           this.logger.error(err);
@@ -365,9 +371,9 @@ export class ImportWalletPage {
 
   public openScanner(): void {
     if (this.navParams.data.fromScan) {
-      this.navCtrl.popToRoot();
+      this.navCtrl.popToRoot({ animate: false });
     } else {
-      this.navCtrl.popToRoot();
+      this.navCtrl.popToRoot({ animate: false });
       this.navCtrl.parent.select(2);
     }
   }

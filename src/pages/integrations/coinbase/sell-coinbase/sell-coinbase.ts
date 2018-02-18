@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Events, ModalController } from 'ionic-angular';
-import { Logger } from '../../../../providers/logger/logger';
+import { Events, ModalController, NavController, NavParams } from 'ionic-angular';
 import * as _ from 'lodash';
+import { Logger } from '../../../../providers/logger/logger';
 
 //pages
-import { CoinbasePage } from '../coinbase';
 import { SuccessModalPage } from '../../../success/success';
+import { CoinbasePage } from '../coinbase';
 
 //providers
 import { AppProvider } from '../../../../providers/app/app';
 import { CoinbaseProvider } from '../../../../providers/coinbase/coinbase';
 import { ConfigProvider } from '../../../../providers/config/config';
-import { PopupProvider } from '../../../../providers/popup/popup';
 import { ExternalLinkProvider } from '../../../../providers/external-link/external-link';
 import { OnGoingProcessProvider } from '../../../../providers/on-going-process/on-going-process';
-import { WalletProvider } from '../../../../providers/wallet/wallet';
-import { TxFormatProvider } from '../../../../providers/tx-format/tx-format';
+import { PopupProvider } from '../../../../providers/popup/popup';
 import { ProfileProvider } from '../../../../providers/profile/profile';
+import { TxFormatProvider } from '../../../../providers/tx-format/tx-format';
+import { WalletProvider } from '../../../../providers/wallet/wallet';
 
 @Component({
   selector: 'page-sell-coinbase',
@@ -300,7 +300,7 @@ export class SellCoinbasePage {
           }
           let outputs = [];
           let toAddress = data.data.address;
-          let amountSat = parseInt((this.sellRequestInfo.amount.amount * 100000000).toFixed(0));
+          let amountSat = parseInt((this.sellRequestInfo.amount.amount * 100000000).toFixed(0), 10);
           let comment = 'Sell bitcoin (Coinbase)';
 
           outputs.push({

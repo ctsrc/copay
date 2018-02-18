@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
-import { NavController, NavParams, Events } from 'ionic-angular';
-import { Logger } from '../../providers/logger/logger';
-import * as _ from "lodash";
 import { TranslateService } from '@ngx-translate/core';
+import { Events, NavController, NavParams } from 'ionic-angular';
+import * as _ from "lodash";
+import { Logger } from '../../providers/logger/logger';
 
 // Providers
 import { AddressBookProvider } from '../../providers/address-book/address-book';
@@ -64,14 +64,11 @@ export class TxDetailsPage {
     this.isShared = this.wallet.credentials.n > 1;
     this.txsUnsubscribedForNotifications = this.config.confirmedTxsNotifications ? !this.config.confirmedTxsNotifications.enabled : true;
 
+    let defaults = this.configProvider.getDefaults();
     if (this.wallet.coin == 'bch') {
-      if (this.walletProvider.useLegacyAddress()) {
-        this.blockexplorerUrl = 'bch-insight.bitpay.com';
-      } else {
-        this.blockexplorerUrl = 'blockdozer.com/insight';
-      }
+      this.blockexplorerUrl = defaults.blockExplorerUrl.bch;
     } else {
-      this.blockexplorerUrl = 'explorer.dallar.org';
+      this.blockexplorerUrl = defaults.blockExplorerUrl.btc;
     }
 
     this.txConfirmNotificationProvider.checkIfEnabled(this.txId).then((res: any) => {
@@ -104,8 +101,8 @@ export class TxDetailsPage {
   }
 
   private updateMemo(): void {
-    this.walletProvider.getTxNote(this.wallet, this.btx.txid).then((note: string) => {
-      if (!note) return;
+    this.walletProvider.getTxNote(this.wallet, this.btx.txid).then((note: any) => {
+      if (!note || note.body == "") return;
       this.btx.note = note;
     }).catch((err: any) => {
       this.logger.warn('Could not fetch transaction note: ' + err);
@@ -197,7 +194,7 @@ export class TxDetailsPage {
     if (this.btx.note && this.btx.note.body) opts.defaultText = this.btx.note.body;
 
     this.popupProvider.ionicPrompt(this.wallet.name, this.translate.instant('Memo'), opts).then((text: string) => {
-      if (typeof text == "undefined") return;
+      if (text == null) return;
 
       this.btx.note = {
         body: text

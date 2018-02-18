@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Events } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
+import { Events, NavController, NavParams } from 'ionic-angular';
 
 // Pages
 import { WalletDetailsPage } from '../../../pages/wallet-details/wallet-details';
@@ -8,13 +8,13 @@ import { WalletDetailsPage } from '../../../pages/wallet-details/wallet-details'
 // Providers
 import { AppProvider } from '../../../providers/app/app';
 import { BwcErrorProvider } from '../../../providers/bwc-error/bwc-error';
+import { Logger } from '../../../providers/logger/logger';
 import { OnGoingProcessProvider } from "../../../providers/on-going-process/on-going-process";
 import { PlatformProvider } from '../../../providers/platform/platform';
 import { PopupProvider } from '../../../providers/popup/popup';
 import { ProfileProvider } from '../../../providers/profile/profile';
+import { PushNotificationsProvider } from '../../../providers/push-notifications/push-notifications';
 import { WalletProvider } from '../../../providers/wallet/wallet';
-import { Logger } from '../../../providers/logger/logger';
-
 
 @Component({
   selector: 'page-copayers',
@@ -42,7 +42,8 @@ export class CopayersPage {
     private profileProvider: ProfileProvider,
     private onGoingProcessProvider: OnGoingProcessProvider,
     private walletProvider: WalletProvider,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private pushNotificationsProvider: PushNotificationsProvider
   ) {
     this.secret = null;
   }
@@ -98,7 +99,7 @@ export class CopayersPage {
     this.profileProvider.deleteWalletClient(this.wallet).then(() => {
       this.onGoingProcessProvider.set('deletingWallet', false);
 
-      // TODO: pushNotificationsService.unsubscribe(this.wallet);
+      this.pushNotificationsProvider.unsubscribe(this.wallet);
       this.navCtrl.popToRoot();
       this.navCtrl.parent.select(0);
     }).catch((err: any) => {

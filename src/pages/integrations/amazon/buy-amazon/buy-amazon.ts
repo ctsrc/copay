@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController, Events } from 'ionic-angular';
-import { Logger } from '../../../../providers/logger/logger';
 import { TranslateService } from '@ngx-translate/core';
+import { Events, ModalController, NavController, NavParams } from 'ionic-angular';
 import * as _ from 'lodash';
 import * as moment from 'moment';
+import { Logger } from '../../../../providers/logger/logger';
 
 // Pages
-import { AmazonPage } from '../amazon';
 import { FeeWarningPage } from '../../../send/fee-warning/fee-warning';
 import { SuccessModalPage } from '../../../success/success';
+import { AmazonPage } from '../amazon';
 
 // Provider
 import { AmazonProvider } from '../../../../providers/amazon/amazon';
@@ -79,8 +79,8 @@ export class BuyAmazonPage {
   }
 
   ionViewWillEnter() {
-    this.amount = this.navParams.data.amountFiat;
-    this.currency = this.navParams.data.currency.toUpperCase();
+    this.amount = this.navParams.data.amount;
+    this.currency = this.navParams.data.currency;
 
     let limitPerDay = this.amazonProvider.limitPerDay;
 
@@ -119,7 +119,7 @@ export class BuyAmazonPage {
   }
 
   private _resetValues() {
-    this.totalAmountStr = this.amount = this.invoiceFee = this.networkFee = this.totalAmount = this.wallet = null;
+    this.totalAmountStr = this.invoiceFee = this.networkFee = this.totalAmount = this.wallet = null;
     this.createdTx = this.message = this.invoiceId = null;
   }
 
@@ -237,7 +237,7 @@ export class BuyAmazonPage {
 
       let outputs = [];
       let toAddress = invoice.bitcoinAddress;
-      let amountSat = parseInt((invoice.btcDue * 100000000).toFixed(0)); // BTC to Satoshi
+      let amountSat = parseInt((invoice.btcDue * 100000000).toFixed(0), 10); // BTC to Satoshi
 
       outputs.push({
         'toAddress': toAddress,
@@ -311,7 +311,7 @@ export class BuyAmazonPage {
         this.openSuccessModal();
       });
     });
-  }, 8000, {
+  }, 15000, {
       'leading': true
     });
 
@@ -334,7 +334,7 @@ export class BuyAmazonPage {
 
       // Sometimes API does not return this element;
       invoice['buyerPaidBtcMinerFee'] = invoice.buyerPaidBtcMinerFee || 0;
-      let invoiceFeeSat = parseInt((invoice.buyerPaidBtcMinerFee * 100000000).toFixed());
+      let invoiceFeeSat = parseInt((invoice.buyerPaidBtcMinerFee * 100000000).toFixed(), 10);
 
       this.message = this.amountUnitStr + " for Amazon.com Gift Card"; // TODO: translate
 
@@ -414,11 +414,14 @@ export class BuyAmazonPage {
 
   public openSuccessModal(): void {
     let successComment: string;
+    let cssClass: string;
     if (this.amazonGiftCard.status == 'FAILURE') {
-      successComment = 'Dallar purchase completed. Coinbase has queued the transfer to your selected wallet';
+      successComment = 'Your purchase could not be completed';
+      cssClass = 'danger';
     }
     if (this.amazonGiftCard.status == 'PENDING') {
-      successComment = 'Your purchase was added to the list of pending'
+      successComment = 'Your purchase was added to the list of pending';
+      cssClass = 'warning';
     }
     if (this.amazonGiftCard.status == 'SUCCESS') {
       successComment = 'Bought ' + this.amountUnitStr;
@@ -427,7 +430,7 @@ export class BuyAmazonPage {
       successComment = 'Gift card generated and ready to use.';
     }
     let successText = '';
-    let modal = this.modalCtrl.create(SuccessModalPage, { successText: successText, successComment: successComment }, { showBackdrop: true, enableBackdropDismiss: false });
+    let modal = this.modalCtrl.create(SuccessModalPage, { successText: successText, successComment: successComment, cssClass: cssClass }, { showBackdrop: true, enableBackdropDismiss: false });
     modal.present();
     modal.onDidDismiss(() => {
       this.navCtrl.remove(2, 2);

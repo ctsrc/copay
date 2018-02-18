@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Events } from 'ionic-angular';
-import { Logger } from '../../providers/logger/logger';
 import { TranslateService } from '@ngx-translate/core';
+import { Events, NavController, NavParams } from 'ionic-angular';
+import { Logger } from '../../providers/logger/logger';
 
 //providers
-import { WalletProvider } from '../../providers/wallet/wallet';
-import { ProfileProvider } from '../../providers/profile/profile';
 import { AddressBookProvider } from '../../providers/address-book/address-book';
 import { BwcErrorProvider } from '../../providers/bwc-error/bwc-error';
+import { ProfileProvider } from '../../providers/profile/profile';
 import { TimeProvider } from '../../providers/time/time';
+import { WalletProvider } from '../../providers/wallet/wallet';
 
 //pages
-import { TxDetailsPage } from '../../pages/tx-details/tx-details';
 import { BackupWarningPage } from '../../pages/backup/backup-warning/backup-warning';
 import { WalletAddressesPage } from '../../pages/settings/wallet-settings/wallet-settings-advanced/wallet-addresses/wallet-addresses';
+import { TxDetailsPage } from '../../pages/tx-details/tx-details';
+import { WalletBalancePage } from './wallet-balance/wallet-balance';
 
 import * as _ from 'lodash';
 
@@ -255,5 +256,9 @@ export class WalletDetailsPage {
   public isUnconfirmed(tx) {
     return !tx.confirmations || tx.confirmations === 0;
   };
+
+  public openBalanceDetails(): void {
+    this.navCtrl.push(WalletBalancePage, { status: this.wallet.status });
+  }
 
 }

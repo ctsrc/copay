@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Logger } from '../../providers/logger/logger';
+import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
+import { Logger } from '../../providers/logger/logger';
 
 @Injectable()
 export class RateProvider {
@@ -86,7 +86,7 @@ export class RateProvider {
     });
   }
 
-  private getRate(code: string, chain?: string): number {
+  public getRate(code: string, chain?: string): number {
     if (chain == 'bch')
       return this.ratesBCH[code];
     else

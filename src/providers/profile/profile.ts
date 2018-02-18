@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Events } from 'ionic-angular';
-import { Logger } from '../../providers/logger/logger';
 import { TranslateService } from '@ngx-translate/core';
+import { Events } from 'ionic-angular';
 import * as _ from 'lodash';
+import { Logger } from '../../providers/logger/logger';
 
 //providers
-import { PersistenceProvider } from '../persistence/persistence';
-import { ConfigProvider } from '../config/config';
-import { BwcProvider } from '../bwc/bwc';
-import { BwcErrorProvider } from '../bwc-error/bwc-error';
-import { PlatformProvider } from '../platform/platform';
 import { AppProvider } from '../../providers/app/app';
 import { LanguageProvider } from '../../providers/language/language';
-import { PopupProvider } from '../popup/popup';
+import { BwcErrorProvider } from '../bwc-error/bwc-error';
+import { BwcProvider } from '../bwc/bwc';
+import { ConfigProvider } from '../config/config';
 import { OnGoingProcessProvider } from '../on-going-process/on-going-process';
+import { PersistenceProvider } from '../persistence/persistence';
+import { PlatformProvider } from '../platform/platform';
+import { PopupProvider } from '../popup/popup';
 
 //models
 import { Profile } from '../../models/profile/profile.model';
@@ -363,6 +363,28 @@ export class ProfileProvider {
     });
   }
 
+  private askToEncryptWallet(wallet: any): Promise<any> {
+    return new Promise((resolve, reject) => {
+      var title = this.translate.instant('Would you like to protect this wallet with a password?');
+      var message = this.translate.instant('Encryption can protect your funds if this device is stolen or compromised by malicious software.');
+      var okText = this.translate.instant('Yes');
+      var cancelText = this.translate.instant('No');
+      this.popupProvider.ionicConfirm(title, message, okText, cancelText).then((res: any) => {
+        if (!res) {
+          return this.showWarningNoEncrypt().then((res) => {
+            if (res) return resolve()
+            return this.encrypt(wallet).then(() => {
+              return resolve();
+            });
+          });
+        }
+        return this.encrypt(wallet).then(() => {
+          return resolve();
+        });
+      });
+    });
+  }
+
   private encrypt(wallet: any): Promise<any> {
     return new Promise((resolve, reject) => {
       let title = 'Optional: Enter a password to encrypt your wallet.'; //TODO gettextcatalog
@@ -377,7 +399,7 @@ export class ProfileProvider {
           });
         }
         else {
-          title = this.translate.instant('Confirm your new spending password');
+          title = this.translate.instant('Enter your password again to confirm');
           this.askPassword(warnMsg, title).then((password2: string) => {
             if (!password2 || password != password2) {
               this.encrypt(wallet).then(() => {
@@ -402,7 +424,7 @@ export class ProfileProvider {
 
       // Encrypt wallet
       this.onGoingProcessProvider.pause();
-      this.encrypt(wallet).then(() => {
+      this.askToEncryptWallet(wallet).then(() => {
         this.onGoingProcessProvider.resume();
 
         let walletId: string = wallet.credentials.walletId
@@ -915,7 +937,7 @@ export class ProfileProvider {
 
   public getWallets(opts?: any) {
 
-    if (opts && !_.isObject(opts)) throw "bad argument";
+    if (opts && !_.isObject(opts)) throw new Error("bad argument");
 
     opts = opts || {};
 

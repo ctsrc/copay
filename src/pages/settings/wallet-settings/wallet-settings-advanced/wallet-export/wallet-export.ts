@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 import { NavController, NavParams, ToastController } from 'ionic-angular';
 import { Logger } from '../../../../../providers/logger/logger';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { TranslateService } from '@ngx-translate/core';
 
 //native
-import { SocialSharing } from '@ionic-native/social-sharing';
 import { Clipboard } from '@ionic-native/clipboard';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 //providers
+import { AppProvider } from '../../../../../providers/app/app';
+import { BackupProvider } from '../../../../../providers/backup/backup';
+import { PersistenceProvider } from '../../../../../providers/persistence/persistence';
+import { PlatformProvider } from '../../../../../providers/platform/platform';
+import { PopupProvider } from '../../../../../providers/popup/popup';
 import { ProfileProvider } from '../../../../../providers/profile/profile';
 import { WalletProvider } from '../../../../../providers/wallet/wallet';
-import { PopupProvider } from '../../../../../providers/popup/popup';
-import { PersistenceProvider } from '../../../../../providers/persistence/persistence';
-import { BackupProvider } from '../../../../../providers/backup/backup';
-import { PlatformProvider } from '../../../../../providers/platform/platform';
-import { AppProvider } from '../../../../../providers/app/app';
 
 @Component({
   selector: 'page-wallet-export',
@@ -157,7 +157,7 @@ export class WalletExportPage {
         };
 
         this.backupProvider.walletDownload(this.exportWalletForm.value.password, opts, this.navParams.data.walletId).then(() => {
-          this.navCtrl.popToRoot();
+          this.navCtrl.popToRoot({ animate: false });
           this.navCtrl.parent.select(0);
         }).catch((err: string) => {
           this.popupProvider.ionicAlert(this.translate.instant('Error'), this.translate.instant('Failed to export'));

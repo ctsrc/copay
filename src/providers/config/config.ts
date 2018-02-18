@@ -65,10 +65,6 @@ interface Config {
     enabled: boolean;
   };
 
-  showIntegrations: {
-    enabled: boolean;
-  };
-
   showIntegration: {
     coinbase: boolean,
     glidera: boolean,
@@ -100,6 +96,11 @@ interface Config {
   log: {
     weight: number;
   };
+
+  blockExplorerUrl: {
+    btc: string;
+    bch: string;
+  }
 };
 
 const configDefault: Config = {
@@ -167,10 +168,6 @@ const configDefault: Config = {
     enabled: true
   },
 
-  showIntegrations: {
-    enabled: true
-  },
-
   showIntegration: {
     coinbase: true,
     glidera: true,
@@ -201,6 +198,11 @@ const configDefault: Config = {
 
   log: {
     weight: 3
+  },
+
+  blockExplorerUrl: {
+    btc: 'insight.bitpay.com',
+    bch: 'bch-insight.bitpay.com'
   }
 };
 
@@ -264,10 +266,6 @@ export class ConfigProvider {
     }
     if (!this.configCache.wallet.settings.unitCode) {
       this.configCache.wallet.settings.unitCode = configDefault.wallet.settings.unitCode;
-    }
-
-    if (!this.configCache.showIntegrations) {
-      this.configCache.showIntegrations = configDefault.showIntegrations;
     }
 
     if (!this.configCache.showIntegration) {
